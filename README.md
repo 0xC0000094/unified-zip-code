@@ -122,12 +122,56 @@ import { load } from "unified-zip-code";
 const uzc = await load("/data/unified-zip-codes.json");
 ```
 
+## The API
+
+Live at [zip.jamesventura.dev](https://zip.jamesventura.dev). Public, no key,
+60 requests a minute per address. Every response is JSON carrying an `ok` field.
+CORS is open, so it works from a browser.
+
+| Endpoint | Returns |
+|---|---|
+| `/api/lookup?code=BC23023` | one barangay |
+| `/api/lookup?psgc=031422023` | one barangay, by geographic code |
+| `/api/search?q=malabon&limit=25` | matching barangays, limit 1 to 100 |
+| `/api/provinces` | all 82 provinces |
+| `/api/municipalities?province=Bulacan` | municipalities, with their prefixes |
+| `/api/barangays?municipality=BC23` | barangays in a municipality |
+
+```json
+{
+  "ok": true,
+  "query": { "code": "BC23023" },
+  "data": {
+    "code": "BC23023",
+    "barangay": "Poblacion",
+    "municipality": "San Rafael",
+    "province": "Bulacan",
+    "psgc": "031422023",
+    "postal": "3008"
+  }
+}
+```
+
+A refusal carries `ok: false`, an `error`, and usually a `hint`. Every response
+carries `x-ratelimit-limit`, `x-ratelimit-remaining` and `x-ratelimit-reset`; a
+429 also carries `retry-after`.
+
+The limit is counted in memory, so on Vercel each serverless container keeps its
+own tally and a cold start resets the window. That is enough for a public
+demonstration and it is not enforcement. Enforcing it means a shared store,
+which this project has not paid for.
+
 ## Running it
 
 ```
-npm test                 # 12 tests, no dependencies
-npm run extract          # regenerate the data from the source workbook
+npm test        # 17 tests
+npm run dev     # the app and the API, locally
+npm run build   # a Vercel build
+npm run extract # regenerate the data from the source workbook
 ```
+
+The library itself has no dependencies. Astro and the Vercel adapter are there
+only to serve the app and the API.
 
 `scripts/extract.py` is the only thing that reads the original workbook.
 Everything else reads the CSVs it writes.

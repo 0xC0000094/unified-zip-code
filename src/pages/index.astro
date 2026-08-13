@@ -1,0 +1,377 @@
+---
+import { db } from "../lib/data";
+
+const count = db().count.toLocaleString();
+const provinces = db().provinces().length;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unified ZIP Code</title>
+    <meta
+      name="description"
+      content="A seven character postal code for the Philippines that resolves to the barangay. All 42,047 of them, with a lookup and an API."
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📮</text></svg>" />
+  </head>
+  <body>
+    <header>
+      <p class="eyebrow">Philippines</p>
+      <h1>Unified ZIP Code</h1>
+      <p class="lede">
+        A seven character postal code that resolves to the barangay. The existing
+        four digit code stops at the city, so in Malabon twelve of the twenty one
+        barangays share the code 1470. This is the code set that fixes that, for
+        all {count} of them.
+      </p>
+
+      <div class="anatomy" aria-label="How the code is structured">
+        <div class="anatomy-code">
+          <span class="p">BC</span><span class="m">23</span><span class="b">023</span>
+        </div>
+        <dl>
+          <div><dt class="p">BC</dt><dd>province, two letters<b>Bulacan</b></dd></div>
+          <div><dt class="m">23</dt><dd>municipality, two digits<b>San Rafael</b></dd></div>
+          <div><dt class="b">023</dt><dd>barangay, three digits<b>Poblacion</b></dd></div>
+        </dl>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel" id="lookup">
+        <label for="q">Look one up</label>
+        <input
+          id="q"
+          type="search"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="A barangay, a municipality, a code, or a PSGC"
+        />
+        <p class="hint">
+          Try
+          <button type="button" data-example="Malabon">Malabon</button>,
+          <button type="button" data-example="Poblacion San Rafael">Poblacion San Rafael</button>,
+          <button type="button" data-example="BC23023">BC23023</button>, or
+          <button type="button" data-example="031422023">031422023</button>.
+        </p>
+
+        <p class="req" id="req" hidden>
+          <span>GET</span> <code id="req-url"></code>
+        </p>
+        <div id="results" aria-live="polite"></div>
+      </section>
+
+      <section id="api">
+        <h2>The API</h2>
+        <p>
+          Public, no key, 60 requests a minute per address. Every response is JSON
+          with an <code>ok</code> field. CORS is open, so it works from a browser.
+        </p>
+
+        <table>
+          <thead>
+            <tr><th>Endpoint</th><th>Returns</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="/api/lookup?code=BC23023"><code>/api/lookup?code=BC23023</code></a></td><td>one barangay</td></tr>
+            <tr><td><a href="/api/lookup?psgc=031422023"><code>/api/lookup?psgc=031422023</code></a></td><td>one barangay, by geographic code</td></tr>
+            <tr><td><a href="/api/search?q=malabon"><code>/api/search?q=malabon&amp;limit=25</code></a></td><td>matching barangays</td></tr>
+            <tr><td><a href="/api/provinces"><code>/api/provinces</code></a></td><td>all {provinces} provinces</td></tr>
+            <tr><td><a href="/api/municipalities?province=Bulacan"><code>/api/municipalities?province=Bulacan</code></a></td><td>municipalities, with prefixes</td></tr>
+            <tr><td><a href="/api/barangays?municipality=BC23"><code>/api/barangays?municipality=BC23</code></a></td><td>barangays in a municipality</td></tr>
+          </tbody>
+        </table>
+
+        <p class="note">
+          The limit is counted in memory, so each serverless container keeps its
+          own tally and a cold start resets it. That is enough for a public
+          demonstration and it is not enforcement. Enforcing it means a shared
+          store, which this project has not paid for.
+        </p>
+      </section>
+
+      <section id="data">
+        <h2>The data</h2>
+        <p>
+          {count} barangays, each carrying its Philippine Standard Geographic Code
+          and its existing four digit zip code alongside the new one, so the three
+          can be reconciled instead of requiring a cutover on a single day.
+        </p>
+        <p>
+          The code is derived from the PSGC, which the Philippine Statistics
+          Authority is mandated to maintain, so the structure stays current at the
+          source. This set is a snapshot, and barangays created, merged or renamed
+          since are not in it.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://github.com/0xC0000094/unified-zip-code">Source and data on GitHub</a>,
+        MIT. Built by <a href="https://jamesventura.dev">James Ventura</a>.
+      </p>
+      <p class="fine">
+        The Philippine Standard Geographic Code is published by the Philippine
+        Statistics Authority. The existing zip codes are published by the
+        Philippine Postal Corporation.
+      </p>
+    </footer>
+
+    <style>
+      :root {
+        --ink: #13181c;
+        --ink-2: #59646c;
+        --ink-3: #8a939a;
+        --rule: #d8dcd6;
+        --rule-strong: #b3bab0;
+        --bg: #fbfaf7;
+        --raised: #fff;
+        --signal: #17564a;
+        --wash: #e6ede9;
+        --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+        --sans: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #e8eae7;
+          --ink-2: #9aa4a0;
+          --ink-3: #6f7a76;
+          --rule: #2a3230;
+          --rule-strong: #3c4643;
+          --bg: #0e1211;
+          --raised: #151a19;
+          --signal: #6fbfa6;
+          --wash: #17241f;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: var(--sans);
+        line-height: 1.6;
+        -webkit-text-size-adjust: 100%;
+      }
+      header, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+      header { padding-top: 3.5rem; }
+      .eyebrow {
+        font-family: var(--mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+        margin: 0;
+      }
+      h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; margin: 0.5rem 0 0; letter-spacing: -0.02em; }
+      .lede { font-size: 1.125rem; color: var(--ink-2); max-width: 34rem; }
+      h2 { font-size: 1.25rem; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+
+      .anatomy {
+        margin: 2rem 0 0;
+        border: 1px solid var(--rule);
+        background: var(--raised);
+        padding: 1.25rem;
+      }
+      .anatomy-code {
+        font-family: var(--mono);
+        font-size: clamp(1.75rem, 7vw, 2.5rem);
+        letter-spacing: 0.04em;
+      }
+      .anatomy .p { color: var(--signal); font-weight: 600; }
+      .anatomy .m { color: var(--ink); }
+      .anatomy .b { color: var(--ink-2); }
+      .anatomy dl { margin: 1rem 0 0; display: grid; gap: 0.375rem; }
+      .anatomy dl > div { display: grid; grid-template-columns: 4rem 1fr; gap: 0.75rem; align-items: baseline; }
+      .anatomy dt { font-family: var(--mono); font-size: 0.9375rem; }
+      .anatomy dd { margin: 0; font-size: 0.875rem; color: var(--ink-3); }
+      .anatomy dd b { color: var(--ink); font-weight: 500; margin-left: 0.5rem; }
+
+      main { padding-top: 2.5rem; padding-bottom: 3rem; }
+      section { margin-bottom: 3rem; }
+      .panel { border: 1px solid var(--rule); background: var(--raised); padding: 1.25rem; }
+      .panel label {
+        display: block;
+        font-family: var(--mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+      }
+      input[type="search"] {
+        width: 100%;
+        margin-top: 0.625rem;
+        padding: 0.625rem 0.75rem;
+        font-family: var(--mono);
+        font-size: 1rem;
+        color: var(--ink);
+        background: var(--bg);
+        border: 1px solid var(--rule-strong);
+        border-radius: 0;
+      }
+      input[type="search"]:focus-visible { outline: 2px solid var(--signal); outline-offset: 1px; }
+      .hint { font-size: 0.8125rem; color: var(--ink-3); margin: 0.625rem 0 0; }
+      .hint button {
+        font: inherit;
+        font-family: var(--mono);
+        background: none;
+        border: 0;
+        padding: 0;
+        color: var(--signal);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        cursor: pointer;
+      }
+      .req {
+        margin: 0.875rem 0 0;
+        font-family: var(--mono);
+        font-size: 0.75rem;
+        color: var(--ink-3);
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      .req span { color: var(--signal); font-weight: 600; }
+
+      #results { margin-top: 0.875rem; }
+      #results .row {
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        gap: 0.25rem 1rem;
+        padding: 0.625rem 0;
+        border-top: 1px solid var(--rule);
+        align-items: baseline;
+      }
+      #results .code { font-family: var(--mono); color: var(--signal); font-weight: 600; }
+      #results .place { font-size: 0.9375rem; }
+      #results .place span { color: var(--ink-2); }
+      #results .meta { grid-column: 2; font-family: var(--mono); font-size: 0.75rem; color: var(--ink-3); }
+      #results .msg { font-family: var(--mono); font-size: 0.8125rem; color: var(--ink-3); padding: 0.5rem 0; }
+      @media (max-width: 30rem) {
+        #results .row { grid-template-columns: 1fr; }
+        #results .meta { grid-column: 1; }
+      }
+
+      table { width: 100%; border-collapse: collapse; font-size: 0.875rem; display: block; overflow-x: auto; }
+      th, td { text-align: left; padding: 0.5rem 0.75rem 0.5rem 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+      th { font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3); font-weight: 400; }
+      td:last-child { color: var(--ink-2); white-space: nowrap; }
+      code { font-family: var(--mono); font-size: 0.8125rem; }
+      a { color: var(--signal); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+      p { max-width: 34rem; }
+      .note, .fine { font-size: 0.8125rem; color: var(--ink-3); }
+      footer { border-top: 1px solid var(--rule); padding-top: 1.25rem; padding-bottom: 3rem; }
+      footer p { margin: 0 0 0.5rem; font-size: 0.875rem; }
+    </style>
+
+    <script>
+      interface Row {
+        code: string;
+        barangay: string;
+        municipality: string;
+        province: string;
+        psgc: string;
+        postal: string | null;
+      }
+
+      const input = document.querySelector<HTMLInputElement>("#q")!;
+      const results = document.querySelector<HTMLElement>("#results")!;
+      const req = document.querySelector<HTMLElement>("#req")!;
+      const reqUrl = document.querySelector<HTMLElement>("#req-url")!;
+
+      const esc = (s: string) =>
+        String(s).replace(
+          /[&<>"']/g,
+          (c) =>
+            ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c] ?? c,
+        );
+
+      const CODE = /^[A-Z]{2}\d{2}\d{3}$/;
+
+      function endpointFor(q: string): string {
+        const raw = q.trim().toUpperCase();
+        if (CODE.test(raw)) return `/api/lookup?code=${encodeURIComponent(raw)}`;
+        const digits = q.replace(/\D/g, "");
+        if (digits.length >= 8 && digits.length <= 9 && /^[\d\s-]+$/.test(q.trim())) {
+          return `/api/lookup?psgc=${encodeURIComponent(digits.padStart(9, "0"))}`;
+        }
+        return `/api/search?q=${encodeURIComponent(q.trim())}&limit=25`;
+      }
+
+      function renderRows(rows: Row[]) {
+        results.innerHTML = rows
+          .map((r) => {
+            const psgc = Number(r.psgc) > 2 ? `PSGC ${r.psgc}` : "no PSGC assigned";
+            const postal = r.postal ? `zip ${r.postal}` : "no zip code";
+            return `<div class="row">
+              <div class="code">${esc(r.code)}</div>
+              <div class="place">${esc(r.barangay)}<span>, ${esc(r.municipality)}, ${esc(
+                r.province,
+              )}</span></div>
+              <div class="meta">${psgc} &middot; ${postal}</div>
+            </div>`;
+          })
+          .join("");
+      }
+
+      const msg = (text: string) => {
+        results.innerHTML = `<p class="msg">${esc(text)}</p>`;
+      };
+
+      let seq = 0;
+      let timer: ReturnType<typeof setTimeout>;
+
+      async function run() {
+        const q = input.value.trim();
+        const mine = ++seq;
+        if (!q) {
+          results.innerHTML = "";
+          req.hidden = true;
+          return;
+        }
+        const path = endpointFor(q);
+        reqUrl.textContent = path;
+        req.hidden = false;
+
+        try {
+          const res = await fetch(path, { headers: { accept: "application/json" } });
+          const body = await res.json();
+          if (mine !== seq) return;
+
+          if (res.status === 429) {
+            msg(body.hint || "Rate limit exceeded.");
+            return;
+          }
+          if (!body.ok) {
+            msg(body.error || `Request failed with ${res.status}.`);
+            return;
+          }
+          const rows: Row[] = Array.isArray(body.data) ? body.data : [body.data];
+          if (!rows.length) {
+            msg(`Nothing matches "${q}".`);
+            return;
+          }
+          renderRows(rows);
+        } catch {
+          if (mine === seq) msg("The request failed.");
+        }
+      }
+
+      input.addEventListener("input", () => {
+        clearTimeout(timer);
+        timer = setTimeout(run, 180);
+      });
+
+      document.querySelectorAll<HTMLButtonElement>("[data-example]").forEach((b) => {
+        b.addEventListener("click", () => {
+          input.value = b.dataset.example ?? "";
+          input.focus();
+          void run();
+        });
+      });
+    </script>
+  </body>
+</html>

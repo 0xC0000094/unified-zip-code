@@ -1,0 +1,89 @@
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Generated 1ms","label":"types","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"Re-optimizing dependencies because vite config has changed","label":"vite","level":"info"}
+{"message":" astro  v7.2.2 ready in 1868 ms\n┃ Local    http://localhost:4331/\n┃ Network  use --host to expose","label":"SKIP_FORMAT","level":"info"}
+{"message":"watching for file changes...","label":null,"level":"info"}
+{"message":"[200] /api/provinces 31ms","label":null,"level":"info"}
+{"message":"[200] /api/lookup 1ms","label":null,"level":"info"}
+{"message":"[200] /api/lookup 1ms","label":null,"level":"info"}
+{"message":"[400] /api/lookup 1ms","label":null,"level":"info"}
+{"message":"[404] /api/lookup 1ms","label":null,"level":"info"}
+{"message":"[200] /api/search 32ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/municipalities 1ms","label":null,"level":"info"}
+{"message":"[200] /api/barangays 4ms","label":null,"level":"info"}
+{"message":"[400] /api/search 0ms","label":null,"level":"info"}
+{"message":"[400] /api/search 1ms","label":null,"level":"info"}
+{"message":"[404] /api/municipalities 0ms","label":null,"level":"info"}
+{"message":"[200] /api/search 40ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 3ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[200] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 1ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"[429] /api/provinces 0ms","label":null,"level":"info"}
+{"message":"Configuration file updated. Restarting...","label":null,"level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"connected.","label":"vite","level":"info"}
+{"message":"server restarted.","label":"vite","level":"info"}
