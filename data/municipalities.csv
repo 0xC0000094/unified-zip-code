@@ -1,0 +1,1635 @@
+province,municipality,code
+Abra,Bangued,AB01
+Abra,Boliney,AB02
+Abra,Bucay,AB03
+Abra,Bucloc,AB04
+Abra,Daguioman,AB05
+Abra,Danglas,AB06
+Abra,Dolores,AB07
+Abra,La Paz,AB08
+Abra,Lacub,AB09
+Abra,Lagangilang,AB10
+Abra,Lagayan,AB11
+Abra,Langiden,AB12
+Abra,Licuan-Baay,AB13
+Abra,Luba,AB14
+Abra,Malibcong,AB15
+Abra,Manabo,AB16
+Abra,Penarrubia,AB17
+Abra,Pidigan,AB18
+Abra,Pilar,AB19
+Abra,Sallapadan,AB20
+Abra,San Isidro,AB21
+Abra,San Juan,AB22
+Abra,San Quintin,AB23
+Abra,Tayum,AB24
+Abra,Tineg,AB25
+Abra,Tubo,AB26
+Abra,Villaviciosa,AB27
+Agusan Del Norte,Buenavista,AN01
+Agusan Del Norte,Butuan City,AN02
+Agusan Del Norte,Cabadbaran City,AN03
+Agusan Del Norte,Carmen,AN04
+Agusan Del Norte,Jabonga,AN05
+Agusan Del Norte,Kitcharao,AN06
+Agusan Del Norte,Las Nieves,AN07
+Agusan Del Norte,Magallanes,AN08
+Agusan Del Norte,Nasipit,AN09
+Agusan Del Norte,Remedios T. Romualdez,AN12
+Agusan Del Norte,Santiago,AN10
+Agusan Del Norte,Tubay,AN11
+Agusan Del Sur,Bayugan City,AS01
+Agusan Del Sur,Bunawan,AS02
+Agusan Del Sur,Esperanza,AS03
+Agusan Del Sur,La Paz,AS04
+Agusan Del Sur,Loreto,AS05
+Agusan Del Sur,Prosperidad,AS06
+Agusan Del Sur,Rosario,AS07
+Agusan Del Sur,San Francisco,AS08
+Agusan Del Sur,San Luis,AS09
+Agusan Del Sur,Santa Josefa,AS10
+Agusan Del Sur,Sibagat,AS14
+Agusan Del Sur,Talacogon,AS11
+Agusan Del Sur,Trento,AS12
+Agusan Del Sur,Veruela,AS13
+Aklan,Altavas,AK01
+Aklan,Balete,AK02
+Aklan,Banga,AK03
+Aklan,Batan,AK04
+Aklan,Buruanga,AK05
+Aklan,Ibajay,AK06
+Aklan,Kalibo,AK07
+Aklan,Lezo,AK08
+Aklan,Libacao,AK09
+Aklan,Madalag,AK10
+Aklan,Makato,AK11
+Aklan,Malay,AK12
+Aklan,Malinao,AK13
+Aklan,Nabas,AK14
+Aklan,New Washington,AK15
+Aklan,Numancia,AK16
+Aklan,Tangalan,AK17
+Albay,Bacacay,AL01
+Albay,Camalig,AL02
+Albay,Daraga,AL03
+Albay,Guinobatan,AL04
+Albay,Jovellar,AL05
+Albay,Legazpi City,AL06
+Albay,Libon,AL07
+Albay,Ligao City,AL08
+Albay,Malilipot,AL09
+Albay,Malinao,AL10
+Albay,Manito,AL11
+Albay,Oas,AL12
+Albay,Pio Duran,AL13
+Albay,Polangui,AL14
+Albay,Rapu-Rapu,AL15
+Albay,Santo Domingo,AL16
+Albay,Tabaco City,AL17
+Albay,Tiwi,AL18
+Antique,Anini-Y,AQ01
+Antique,Barbaza,AQ02
+Antique,Belison,AQ03
+Antique,Bugasong,AQ04
+Antique,Caluya,AQ05
+Antique,Culasi,AQ06
+Antique,Hamtic,AQ08
+Antique,Laua-An,AQ09
+Antique,Libertad,AQ10
+Antique,Pandan,AQ11
+Antique,Patnongon,AQ12
+Antique,San Jose,AQ13
+Antique,San Remigio,AQ14
+Antique,Sebaste,AQ15
+Antique,Sibalom,AQ16
+Antique,Tibiao,AQ17
+Antique,Tobias Fornier,AQ07
+Antique,Valderrama,AQ18
+Apayao,Calanasan,AP01
+Apayao,Conner,AP02
+Apayao,Flora,AP03
+Apayao,Kabugao,AP04
+Apayao,Luna,AP05
+Apayao,Pudtol,AP06
+Apayao,Santa Marcela,AP07
+Aurora,Baler,AU01
+Aurora,Casiguran,AU02
+Aurora,Dilasag,AU03
+Aurora,Dinalungan,AU04
+Aurora,Dingalan,AU05
+Aurora,Dipaculao,AU06
+Aurora,Maria Aurora,AU07
+Aurora,San Luis,AU08
+Basilan,Akbar,BS07
+Basilan,Al-Barka,BS08
+Basilan,City of Isabela,BS13
+Basilan,Hadji Mohammad Ajul,BS09
+Basilan,Hadji Muhtamad,BS11
+Basilan,Lamitan City,BS01
+Basilan,Lantawan,BS02
+Basilan,Maluso,BS03
+Basilan,Sumisip,BS04
+Basilan,Tabuan-Lasa,BS12
+Basilan,Tipo-Tipo,BS05
+Basilan,Tuburan,BS06
+Basilan,Ungkaya Pukan,BS10
+Bataan,Abucay,BN01
+Bataan,Bagac,BN02
+Bataan,Balanga City,BN03
+Bataan,Dinalupihan,BN04
+Bataan,Hermosa,BN05
+Bataan,Limay,BN06
+Bataan,Mariveles,BN07
+Bataan,Morong,BN08
+Bataan,Orani,BN09
+Bataan,Orion,BN10
+Bataan,Pilar,BN11
+Bataan,Samal,BN12
+Batanes,Basco,BT01
+Batanes,Itbayat,BT02
+Batanes,Ivana,BT03
+Batanes,Mahatao,BT04
+Batanes,Sabtang,BT05
+Batanes,Uyugan,BT06
+Batangas,Agoncillo,BG01
+Batangas,Alitagtag,BG02
+Batangas,Balayan,BG03
+Batangas,Balete,BG04
+Batangas,Batangas City,BG05
+Batangas,Bauan,BG06
+Batangas,Calaca,BG07
+Batangas,Calatagan,BG08
+Batangas,Cuenca,BG09
+Batangas,Ibaan,BG10
+Batangas,Laurel,BG11
+Batangas,Lemery,BG12
+Batangas,Lian,BG13
+Batangas,Lipa City,BG14
+Batangas,Lobo,BG15
+Batangas,Mabini,BG16
+Batangas,Malvar,BG17
+Batangas,Mataasnakahoy,BG18
+Batangas,Nasugbu,BG19
+Batangas,Padre Garcia,BG20
+Batangas,Rosario,BG21
+Batangas,San Jose,BG22
+Batangas,San Juan,BG23
+Batangas,San Luis,BG24
+Batangas,San Nicolas,BG25
+Batangas,San Pascual,BG26
+Batangas,Santa Teresita,BG27
+Batangas,Santo Tomas,BG28
+Batangas,Taal,BG29
+Batangas,Talisay,BG30
+Batangas,Tanauan City,BG31
+Batangas,Taysan,BG32
+Batangas,Tingloy,BG33
+Batangas,Tuy,BG34
+Benguet,Atok,BE01
+Benguet,Baguio City,BE02
+Benguet,Bakun,BE03
+Benguet,Bokod,BE04
+Benguet,Buguias,BE05
+Benguet,Itogon,BE06
+Benguet,Kabayan,BE07
+Benguet,Kapangan,BE08
+Benguet,Kibungan,BE09
+Benguet,La Trinidad,BE10
+Benguet,Mankayan,BE11
+Benguet,Sablan,BE12
+Benguet,Tuba,BE13
+Benguet,Tublay,BE14
+Biliran,Almeria,BL01
+Biliran,Biliran,BL02
+Biliran,Cabucgayan,BL03
+Biliran,Caibiran,BL04
+Biliran,Culaba,BL05
+Biliran,Kawayan,BL06
+Biliran,Maripipi,BL07
+Biliran,Naval,BL08
+Bohol,Alburquerque,BH01
+Bohol,Alicia,BH02
+Bohol,Anda,BH03
+Bohol,Antequera,BH04
+Bohol,Baclayon,BH05
+Bohol,Balilihan,BH06
+Bohol,Batuan,BH07
+Bohol,Bien Unido,BH48
+Bohol,Bilar,BH08
+Bohol,Buenavista,BH09
+Bohol,Calape,BH10
+Bohol,Candijay,BH11
+Bohol,Carmen,BH12
+Bohol,Catigbian,BH13
+Bohol,Clarin,BH14
+Bohol,Corella,BH15
+Bohol,Cortes,BH16
+Bohol,Dagohoy,BH17
+Bohol,Danao,BH18
+Bohol,Dauis,BH19
+Bohol,Dimiao,BH20
+Bohol,Duero,BH21
+Bohol,Garcia Hernandez,BH22
+Bohol,Getafe,BH26
+Bohol,Guindulman,BH23
+Bohol,Inabanga,BH24
+Bohol,Jagna,BH25
+Bohol,Lila,BH27
+Bohol,Loay,BH28
+Bohol,Loboc,BH29
+Bohol,Loon,BH30
+Bohol,Mabini,BH31
+Bohol,Maribojoc,BH32
+Bohol,Panglao,BH33
+Bohol,Pilar,BH34
+Bohol,President Carlos P. Garcia,BH35
+Bohol,Sagbayan,BH36
+Bohol,San Isidro,BH37
+Bohol,San Miguel,BH38
+Bohol,Sevilla,BH39
+Bohol,Sierra Bullones,BH40
+Bohol,Sikatuna,BH41
+Bohol,Tagbilaran City,BH42
+Bohol,Talibon,BH43
+Bohol,Trinidad,BH44
+Bohol,Tubigon,BH45
+Bohol,Ubay,BH46
+Bohol,Valencia,BH47
+Bukidnon,Baungon,BK01
+Bukidnon,Cabanglasan,BK02
+Bukidnon,Damulog,BK03
+Bukidnon,Dangcagan,BK04
+Bukidnon,Don Carlos,BK05
+Bukidnon,Impasug-Ong,BK06
+Bukidnon,Kadingilan,BK07
+Bukidnon,Kalilangan,BK08
+Bukidnon,Kibawe,BK09
+Bukidnon,Kitaotao,BK10
+Bukidnon,Lantapan,BK11
+Bukidnon,Libona,BK12
+Bukidnon,Malaybalay City,BK13
+Bukidnon,Malitbog,BK14
+Bukidnon,Manolo Fortich,BK15
+Bukidnon,Maramag,BK16
+Bukidnon,Pangantucan,BK17
+Bukidnon,Quezon,BK18
+Bukidnon,San Fernando,BK19
+Bukidnon,Sumilao,BK20
+Bukidnon,Talakag,BK21
+Bukidnon,Valencia City,BK22
+Bulacan,Angat,BC01
+Bulacan,Balagtas,BC02
+Bulacan,Baliuag,BC03
+Bulacan,Bocaue,BC04
+Bulacan,Bulacan,BC05
+Bulacan,Bustos,BC06
+Bulacan,Calumpit,BC07
+Bulacan,Dona Remedios Trinidad,BC08
+Bulacan,Guiguinto,BC09
+Bulacan,Hagonoy,BC10
+Bulacan,Malolos City,BC11
+Bulacan,Marilao,BC12
+Bulacan,Meycauayan City,BC13
+Bulacan,Norzagaray,BC14
+Bulacan,Obando,BC15
+Bulacan,Pandi,BC16
+Bulacan,Paombong,BC17
+Bulacan,Plaridel,BC18
+Bulacan,Pulilan,BC19
+Bulacan,San Ildefonso,BC20
+Bulacan,San Jose Del Monte City,BC21
+Bulacan,San Miguel,BC22
+Bulacan,San Rafael,BC23
+Bulacan,Santa Maria,BC24
+Cagayan,Abulug,CG01
+Cagayan,Alcala,CG02
+Cagayan,Allacapan,CG03
+Cagayan,Amulung,CG04
+Cagayan,Aparri,CG05
+Cagayan,Baggao,CG06
+Cagayan,Ballesteros,CG07
+Cagayan,Buguey,CG08
+Cagayan,Calayan,CG09
+Cagayan,Camalaniugan,CG10
+Cagayan,Claveria,CG11
+Cagayan,Enrile,CG12
+Cagayan,Gattaran,CG13
+Cagayan,Gonzaga,CG14
+Cagayan,Iguig,CG15
+Cagayan,Lal-Lo,CG16
+Cagayan,Lasam,CG17
+Cagayan,Pamplona,CG18
+Cagayan,Penablanca,CG19
+Cagayan,Piat,CG20
+Cagayan,Rizal,CG21
+Cagayan,Sanchez-Mira,CG22
+Cagayan,Santa Ana,CG23
+Cagayan,Santa Praxedes,CG24
+Cagayan,Santa Teresita,CG25
+Cagayan,Santo Nino,CG26
+Cagayan,Solana,CG27
+Cagayan,Tuao,CG28
+Cagayan,Tuguegarao City,CG29
+Camarines Norte,Basud,CN01
+Camarines Norte,Capalonga,CN02
+Camarines Norte,Daet,CN03
+Camarines Norte,Jose Panganiban,CN05
+Camarines Norte,Labo,CN06
+Camarines Norte,Mercedes,CN07
+Camarines Norte,Paracale,CN08
+Camarines Norte,San Lorenzo Ruiz,CN04
+Camarines Norte,San Vicente,CN09
+Camarines Norte,Santa Elena,CN10
+Camarines Norte,Talisay,CN11
+Camarines Norte,Vinzons,CN12
+Camarines Sur,Baao,CS01
+Camarines Sur,Balatan,CS02
+Camarines Sur,Bato,CS03
+Camarines Sur,Bombon,CS04
+Camarines Sur,Buhi,CS05
+Camarines Sur,Bula,CS06
+Camarines Sur,Cabusao,CS07
+Camarines Sur,Calabanga,CS08
+Camarines Sur,Camaligan,CS09
+Camarines Sur,Canaman,CS10
+Camarines Sur,Caramoan,CS11
+Camarines Sur,Del Gallego,CS12
+Camarines Sur,Gainza,CS13
+Camarines Sur,Garchitorena,CS14
+Camarines Sur,Goa,CS15
+Camarines Sur,Iriga City,CS16
+Camarines Sur,Lagonoy,CS17
+Camarines Sur,Libmanan,CS18
+Camarines Sur,Lupi,CS19
+Camarines Sur,Magarao,CS20
+Camarines Sur,Milaor,CS21
+Camarines Sur,Minalabac,CS22
+Camarines Sur,Nabua,CS23
+Camarines Sur,Naga City,CS24
+Camarines Sur,Ocampo,CS25
+Camarines Sur,Pamplona,CS26
+Camarines Sur,Pasacao,CS27
+Camarines Sur,Pili,CS28
+Camarines Sur,Presentacion,CS29
+Camarines Sur,Ragay,CS30
+Camarines Sur,Sagnay,CS31
+Camarines Sur,San Fernando,CS32
+Camarines Sur,San Jose,CS33
+Camarines Sur,Sipocot,CS34
+Camarines Sur,Siruma,CS35
+Camarines Sur,Tigaon,CS36
+Camarines Sur,Tinambac,CS37
+Camiguin,Catarman,CM01
+Camiguin,Guinsiliban,CM02
+Camiguin,Mahinog,CM03
+Camiguin,Mambajao,CM04
+Camiguin,Sagay,CM05
+Capiz,Cuartero,CZ01
+Capiz,Dao,CZ02
+Capiz,Dumalag,CZ03
+Capiz,Dumarao,CZ04
+Capiz,Ivisan,CZ05
+Capiz,Jamindan,CZ06
+Capiz,Ma-Ayon,CZ08
+Capiz,Mambusao,CZ07
+Capiz,Panay,CZ09
+Capiz,Panitan,CZ10
+Capiz,Pilar,CZ11
+Capiz,Pontevedra,CZ12
+Capiz,President Roxas,CZ13
+Capiz,Roxas City,CZ14
+Capiz,Sapi-An,CZ15
+Capiz,Sigma,CZ16
+Capiz,Tapaz,CZ17
+Catanduanes,Bagamanoc,CT01
+Catanduanes,Baras,CT02
+Catanduanes,Bato,CT03
+Catanduanes,Caramoran,CT04
+Catanduanes,Gigmoto,CT05
+Catanduanes,Pandan,CT06
+Catanduanes,Panganiban,CT07
+Catanduanes,San Andres,CT08
+Catanduanes,San Miguel,CT09
+Catanduanes,Viga,CT10
+Catanduanes,Virac,CT11
+Cavite,Alfonso,CV01
+Cavite,Amadeo,CV02
+Cavite,Bacoor City,CV03
+Cavite,Carmona,CV04
+Cavite,Cavite City,CV05
+Cavite,Dasmarinas City,CV06
+Cavite,Gen. Mariano Alvarez,CV07
+Cavite,General Emilio Aguinaldo,CV08
+Cavite,General Trias City,CV09
+Cavite,Imus City,CV10
+Cavite,Indang,CV11
+Cavite,Kawit,CV12
+Cavite,Magallanes,CV13
+Cavite,Maragondon,CV14
+Cavite,Mendez,CV15
+Cavite,Naic,CV16
+Cavite,Noveleta,CV17
+Cavite,Rosario,CV18
+Cavite,Silang,CV19
+Cavite,Tagaytay City,CV20
+Cavite,Tanza,CV21
+Cavite,Ternate,CV22
+Cavite,Trece Martires City,CV23
+Cebu,Alcantara,CE01
+Cebu,Alcoy,CE02
+Cebu,Alegria,CE03
+Cebu,Aloguinsan,CE04
+Cebu,Argao,CE05
+Cebu,Asturias,CE06
+Cebu,Badian,CE07
+Cebu,Balamban,CE08
+Cebu,Bantayan,CE09
+Cebu,Barili,CE10
+Cebu,Bogo City,CE11
+Cebu,Boljoon,CE12
+Cebu,Borbon,CE13
+Cebu,Carcar City,CE14
+Cebu,Carmen,CE15
+Cebu,Catmon,CE16
+Cebu,Cebu City,CE17
+Cebu,Compostela,CE18
+Cebu,Consolacion,CE19
+Cebu,Cordova,CE20
+Cebu,Daanbantayan,CE21
+Cebu,Dalaguete,CE22
+Cebu,Danao City,CE23
+Cebu,Dumanjug,CE24
+Cebu,Ginatilan,CE25
+Cebu,Lapu-Lapu City,CE26
+Cebu,Liloan,CE27
+Cebu,Madridejos,CE28
+Cebu,Malabuyoc,CE29
+Cebu,Mandaue City,CE30
+Cebu,Medellin,CE31
+Cebu,Minglanilla,CE32
+Cebu,Moalboal,CE33
+Cebu,Naga City,CE34
+Cebu,Oslob,CE35
+Cebu,Pilar,CE36
+Cebu,Pinamungajan,CE37
+Cebu,Poro,CE38
+Cebu,Ronda,CE39
+Cebu,Samboan,CE40
+Cebu,San Fernando,CE41
+Cebu,San Francisco,CE42
+Cebu,San Remigio,CE43
+Cebu,Santa Fe,CE44
+Cebu,Santander,CE45
+Cebu,Sibonga,CE46
+Cebu,Sogod,CE47
+Cebu,Tabogon,CE48
+Cebu,Tabuelan,CE49
+Cebu,Talisay City,CE50
+Cebu,Toledo City,CE51
+Cebu,Tuburan,CE52
+Cebu,Tudela,CE53
+Compostela Valley,Compostela,CP01
+Compostela Valley,Laak,CP02
+Compostela Valley,Mabini,CP03
+Compostela Valley,Maco,CP04
+Compostela Valley,Maragusan,CP05
+Compostela Valley,Mawab,CP06
+Compostela Valley,Monkayo,CP07
+Compostela Valley,Montevista,CP08
+Compostela Valley,Nabunturan,CP09
+Compostela Valley,New Bataan,CP10
+Compostela Valley,Pantukan,CP11
+Cotabato,Alamada,CO01
+Cotabato,Aleosan,CO17
+Cotabato,Antipas,CO15
+Cotabato,Arakan,CO18
+Cotabato,Banisilan,CO16
+Cotabato,Carmen,CO02
+Cotabato,Kabacan,CO03
+Cotabato,Kidapawan City,CO04
+Cotabato,Libungan,CO05
+Cotabato,M'Lang,CO10
+Cotabato,Magpet,CO06
+Cotabato,Makilala,CO07
+Cotabato,Matalam,CO08
+Cotabato,Midsayap,CO09
+Cotabato,Pigkawayan,CO11
+Cotabato,Pikit,CO12
+Cotabato,President Roxas,CO13
+Cotabato,Tulunan,CO14
+Davao Del Norte,Asuncion,DN01
+Davao Del Norte,Braulio E. Dujali,DN02
+Davao Del Norte,Carmen,DN03
+Davao Del Norte,Island Garden City of Samal,DN04
+Davao Del Norte,Kapalong,DN05
+Davao Del Norte,New Corella,DN06
+Davao Del Norte,Panabo City,DN07
+Davao Del Norte,San Isidro,DN08
+Davao Del Norte,Santo Tomas,DN09
+Davao Del Norte,Tagum City,DN10
+Davao Del Norte,Talaingod,DN11
+Davao Del Sur,Bansalan,DS01
+Davao Del Sur,Davao City,DS02
+Davao Del Sur,Digos City,DS03
+Davao Del Sur,Hagonoy,DS04
+Davao Del Sur,Kiblawan,DS05
+Davao Del Sur,Magsaysay,DS06
+Davao Del Sur,Malalag,DS07
+Davao Del Sur,Matanao,DS08
+Davao Del Sur,Padada,DS09
+Davao Del Sur,Santa Cruz,DS10
+Davao Del Sur,Sulop,DS11
+Davao Occidental,Don Marcelino,DC01
+Davao Occidental,Jose Abad Santos,DC02
+Davao Occidental,Malita,DC03
+Davao Occidental,Santa Maria,DC04
+Davao Occidental,Sarangani,DC05
+Davao Oriental,Baganga,DR01
+Davao Oriental,Banaybanay,DR02
+Davao Oriental,Boston,DR03
+Davao Oriental,Caraga,DR04
+Davao Oriental,Cateel,DR05
+Davao Oriental,Governor Generoso,DR06
+Davao Oriental,Lupon,DR07
+Davao Oriental,Manay,DR08
+Davao Oriental,Mati City,DR09
+Davao Oriental,San Isidro,DR10
+Davao Oriental,Tarragona,DR11
+Dinagat Islands,Basilisa,DI01
+Dinagat Islands,Cagdianao,DI02
+Dinagat Islands,Dinagat,DI03
+Dinagat Islands,Libjo,DI04
+Dinagat Islands,Loreto,DI05
+Dinagat Islands,San Jose,DI06
+Dinagat Islands,Tubajon,DI07
+Eastern Samar,Arteche,ES01
+Eastern Samar,Balangiga,ES02
+Eastern Samar,Balangkayan,ES03
+Eastern Samar,Borongan City,ES04
+Eastern Samar,Can-Avid,ES05
+Eastern Samar,Dolores,ES06
+Eastern Samar,General Macarthur,ES07
+Eastern Samar,Giporlos,ES08
+Eastern Samar,Guiuan,ES09
+Eastern Samar,Hernani,ES10
+Eastern Samar,Jipapad,ES11
+Eastern Samar,Lawaan,ES12
+Eastern Samar,Llorente,ES13
+Eastern Samar,Maslog,ES14
+Eastern Samar,Maydolong,ES15
+Eastern Samar,Mercedes,ES16
+Eastern Samar,Oras,ES17
+Eastern Samar,Quinapondan,ES18
+Eastern Samar,Salcedo,ES19
+Eastern Samar,San Julian,ES20
+Eastern Samar,San Policarpo,ES21
+Eastern Samar,Sulat,ES22
+Eastern Samar,Taft,ES23
+Guimaras,Buenavista,GM01
+Guimaras,Jordan,GM02
+Guimaras,Nueva Valencia,GM03
+Guimaras,San Lorenzo,GM04
+Guimaras,Sibunag,GM05
+Ifugao,Aguinaldo,IF08
+Ifugao,Alfonso Lista,IF07
+Ifugao,Asipulo,IF11
+Ifugao,Banaue,IF01
+Ifugao,Hingyon,IF09
+Ifugao,Hungduan,IF02
+Ifugao,Kiangan,IF03
+Ifugao,Lagawe,IF04
+Ifugao,Lamut,IF05
+Ifugao,Mayoyao,IF06
+Ifugao,Tinoc,IF10
+Ilocos Norte,Adams,IN01
+Ilocos Norte,Bacarra,IN02
+Ilocos Norte,Badoc,IN03
+Ilocos Norte,Bangui,IN04
+Ilocos Norte,Banna,IN11
+Ilocos Norte,Batac City,IN05
+Ilocos Norte,Burgos,IN06
+Ilocos Norte,Carasi,IN07
+Ilocos Norte,Currimao,IN08
+Ilocos Norte,Dingras,IN09
+Ilocos Norte,Dumalneg,IN10
+Ilocos Norte,Laoag City,IN12
+Ilocos Norte,Marcos,IN13
+Ilocos Norte,Nueva Era,IN14
+Ilocos Norte,Pagudpud,IN15
+Ilocos Norte,Paoay,IN16
+Ilocos Norte,Pasuquin,IN17
+Ilocos Norte,Piddig,IN18
+Ilocos Norte,Pinili,IN19
+Ilocos Norte,San Nicolas,IN20
+Ilocos Norte,Sarrat,IN21
+Ilocos Norte,Solsona,IN22
+Ilocos Norte,Vintar,IN23
+Ilocos Sur,Alilem,IS01
+Ilocos Sur,Banayoyo,IS02
+Ilocos Sur,Bantay,IS03
+Ilocos Sur,Burgos,IS04
+Ilocos Sur,Cabugao,IS05
+Ilocos Sur,Candon City,IS06
+Ilocos Sur,Caoayan,IS07
+Ilocos Sur,Cervantes,IS08
+Ilocos Sur,Galimuyod,IS09
+Ilocos Sur,Gregorio Del Pilar,IS10
+Ilocos Sur,Lidlidda,IS11
+Ilocos Sur,Magsingal,IS12
+Ilocos Sur,Nagbukel,IS13
+Ilocos Sur,Narvacan,IS14
+Ilocos Sur,Quirino,IS15
+Ilocos Sur,Salcedo,IS16
+Ilocos Sur,San Emilio,IS17
+Ilocos Sur,San Esteban,IS18
+Ilocos Sur,San Ildefonso,IS19
+Ilocos Sur,San Juan,IS20
+Ilocos Sur,San Vicente,IS21
+Ilocos Sur,Santa,IS22
+Ilocos Sur,Santa Catalina,IS23
+Ilocos Sur,Santa Cruz,IS24
+Ilocos Sur,Santa Lucia,IS25
+Ilocos Sur,Santa Maria,IS26
+Ilocos Sur,Santiago,IS27
+Ilocos Sur,Santo Domingo,IS28
+Ilocos Sur,Sigay,IS29
+Ilocos Sur,Sinait,IS30
+Ilocos Sur,Sugpon,IS31
+Ilocos Sur,Suyo,IS32
+Ilocos Sur,Tagudin,IS33
+Ilocos Sur,Vigan City,IS34
+Iloilo,Ajuy,IL01
+Iloilo,Alimodian,IL02
+Iloilo,Anilao,IL03
+Iloilo,Badiangan,IL04
+Iloilo,Balasan,IL05
+Iloilo,Banate,IL06
+Iloilo,Barotac Nuevo,IL07
+Iloilo,Barotac Viejo,IL08
+Iloilo,Batad,IL09
+Iloilo,Bingawan,IL10
+Iloilo,Cabatuan,IL11
+Iloilo,Calinog,IL12
+Iloilo,Carles,IL13
+Iloilo,Concepcion,IL14
+Iloilo,Dingle,IL15
+Iloilo,Duenas,IL16
+Iloilo,Dumangas,IL17
+Iloilo,Estancia,IL18
+Iloilo,Guimbal,IL19
+Iloilo,Igbaras,IL20
+Iloilo,Iloilo City,IL21
+Iloilo,Janiuay,IL22
+Iloilo,Lambunao,IL23
+Iloilo,Leganes,IL24
+Iloilo,Lemery,IL25
+Iloilo,Leon,IL26
+Iloilo,Maasin,IL27
+Iloilo,Miagao,IL28
+Iloilo,Mina,IL29
+Iloilo,New Lucena,IL30
+Iloilo,Oton,IL31
+Iloilo,Passi City,IL32
+Iloilo,Pavia,IL33
+Iloilo,Pototan,IL34
+Iloilo,San Dionisio,IL35
+Iloilo,San Enrique,IL36
+Iloilo,San Joaquin,IL37
+Iloilo,San Miguel,IL38
+Iloilo,San Rafael,IL39
+Iloilo,Santa Barbara,IL40
+Iloilo,Sara,IL41
+Iloilo,Tigbauan,IL42
+Iloilo,Tubungan,IL43
+Iloilo,Zarraga,IL44
+Isabela,Alicia,IA01
+Isabela,Angadanan,IA02
+Isabela,Aurora,IA03
+Isabela,Benito Soliven,IA04
+Isabela,Burgos,IA05
+Isabela,Cabagan,IA06
+Isabela,Cabatuan,IA07
+Isabela,Cauayan City,IA08
+Isabela,Cordon,IA09
+Isabela,Delfin Albano,IA10
+Isabela,Dinapigue,IA11
+Isabela,Divilacan,IA12
+Isabela,Echague,IA13
+Isabela,Gamu,IA14
+Isabela,Ilagan City,IA15
+Isabela,Jones,IA16
+Isabela,Luna,IA17
+Isabela,Maconacon,IA18
+Isabela,Mallig,IA19
+Isabela,Naguilian,IA20
+Isabela,Palanan,IA21
+Isabela,Quezon,IA22
+Isabela,Quirino,IA23
+Isabela,Ramon,IA24
+Isabela,Reina Mercedes,IA25
+Isabela,Roxas,IA26
+Isabela,San Agustin,IA27
+Isabela,San Guillermo,IA28
+Isabela,San Isidro,IA29
+Isabela,San Manuel,IA30
+Isabela,San Mariano,IA31
+Isabela,San Mateo,IA32
+Isabela,San Pablo,IA33
+Isabela,Santa Maria,IA34
+Isabela,Santiago City,IA35
+Isabela,Santo Tomas,IA36
+Isabela,Tumauini,IA37
+Kalinga,Balbalan,KA01
+Kalinga,Lubuagan,KA02
+Kalinga,Pasil,KA03
+Kalinga,Pinukpuk,KA04
+Kalinga,Rizal,KA05
+Kalinga,Tabuk City,KA06
+Kalinga,Tanudan,KA07
+Kalinga,Tinglayan,KA08
+La Union,Agoo,LU01
+La Union,Aringay,LU02
+La Union,Bacnotan,LU03
+La Union,Bagulin,LU04
+La Union,Balaoan,LU05
+La Union,Bangar,LU06
+La Union,Bauang,LU07
+La Union,Burgos,LU08
+La Union,Caba,LU09
+La Union,Luna,LU10
+La Union,Naguilian,LU11
+La Union,Pugo,LU12
+La Union,Rosario,LU13
+La Union,San Fernando City,LU14
+La Union,San Gabriel,LU15
+La Union,San Juan,LU16
+La Union,Santo Tomas,LU17
+La Union,Santol,LU18
+La Union,Sudipen,LU19
+La Union,Tubao,LU20
+Laguna,Alaminos,LG01
+Laguna,Bay,LG02
+Laguna,Binan City,LG03
+Laguna,Cabuyao City,LG04
+Laguna,Calamba City,LG05
+Laguna,Calauan,LG06
+Laguna,Cavinti,LG07
+Laguna,Famy,LG08
+Laguna,Kalayaan,LG09
+Laguna,Liliw,LG10
+Laguna,Los Banos,LG11
+Laguna,Luisiana,LG12
+Laguna,Lumban,LG13
+Laguna,Mabitac,LG14
+Laguna,Magdalena,LG15
+Laguna,Majayjay,LG16
+Laguna,Nagcarlan,LG17
+Laguna,Paete,LG18
+Laguna,Pagsanjan,LG19
+Laguna,Pakil,LG20
+Laguna,Pangil,LG21
+Laguna,Pila,LG22
+Laguna,Rizal,LG23
+Laguna,San Pablo City,LG24
+Laguna,San Pedro City,LG25
+Laguna,Santa Cruz,LG26
+Laguna,Santa Maria,LG27
+Laguna,Santa Rosa City,LG28
+Laguna,Siniloan,LG29
+Laguna,Victoria,LG30
+Lanao Del Norte,Bacolod,LN01
+Lanao Del Norte,Baloi,LN02
+Lanao Del Norte,Baroy,LN03
+Lanao Del Norte,Iligan City,LN04
+Lanao Del Norte,Kapatagan,LN05
+Lanao Del Norte,Kauswagan,LN06
+Lanao Del Norte,Kolambugan,LN07
+Lanao Del Norte,Lala,LN08
+Lanao Del Norte,Linamon,LN09
+Lanao Del Norte,Magsaysay,LN10
+Lanao Del Norte,Maigo,LN11
+Lanao Del Norte,Matungao,LN12
+Lanao Del Norte,Munai,LN13
+Lanao Del Norte,Nunungan,LN14
+Lanao Del Norte,Pantao Ragat,LN15
+Lanao Del Norte,Pantar,LN16
+Lanao Del Norte,Poona Piagapo,LN17
+Lanao Del Norte,Salvador,LN18
+Lanao Del Norte,Sapad,LN19
+Lanao Del Norte,Sultan Naga Dimaporo,LN20
+Lanao Del Norte,Tagoloan,LN21
+Lanao Del Norte,Tangcal,LN22
+Lanao Del Norte,Tubod,LN23
+Lanao Del Sur,Amai Manabilang,LS36
+Lanao Del Sur,Bacolod-Kalawi,LS01
+Lanao Del Sur,Balabagan,LS02
+Lanao Del Sur,Balindong,LS03
+Lanao Del Sur,Bayang,LS04
+Lanao Del Sur,Binidayan,LS05
+Lanao Del Sur,Buadiposo-Buntong,LS32
+Lanao Del Sur,Bubong,LS06
+Lanao Del Sur,Butig,LS07
+Lanao Del Sur,Calanogas,LS31
+Lanao Del Sur,Ditsaan-Ramain,LS23
+Lanao Del Sur,Ganassi,LS08
+Lanao Del Sur,Kapai,LS09
+Lanao Del Sur,Kapatagan,LS38
+Lanao Del Sur,Lumba-Bayabao,LS10
+Lanao Del Sur,Lumbaca-Unayan,LS40
+Lanao Del Sur,Lumbatan,LS11
+Lanao Del Sur,Lumbayanague,LS35
+Lanao Del Sur,Madalum,LS12
+Lanao Del Sur,Madamba,LS13
+Lanao Del Sur,Maguing,LS33
+Lanao Del Sur,Malabang,LS14
+Lanao Del Sur,Marantao,LS15
+Lanao Del Sur,Marawi City,LS16
+Lanao Del Sur,Marogong,LS30
+Lanao Del Sur,Masiu,LS17
+Lanao Del Sur,Mulondo,LS18
+Lanao Del Sur,Pagayawan,LS19
+Lanao Del Sur,Piagapo,LS20
+Lanao Del Sur,Picong,LS34
+Lanao Del Sur,Poona Bayabao,LS21
+Lanao Del Sur,Pualas,LS22
+Lanao Del Sur,Saguiaran,LS24
+Lanao Del Sur,Sultan Dumalondong,LS39
+Lanao Del Sur,Tagoloan Ii,LS37
+Lanao Del Sur,Tamparan,LS25
+Lanao Del Sur,Taraka,LS26
+Lanao Del Sur,Tubaran,LS27
+Lanao Del Sur,Tugaya,LS28
+Lanao Del Sur,Wao,LS29
+Leyte,Abuyog,LY01
+Leyte,Alangalang,LY02
+Leyte,Albuera,LY03
+Leyte,Babatngon,LY04
+Leyte,Barugo,LY05
+Leyte,Bato,LY06
+Leyte,Baybay City,LY07
+Leyte,Burauen,LY08
+Leyte,Calubian,LY09
+Leyte,Capoocan,LY10
+Leyte,Carigara,LY11
+Leyte,Dagami,LY12
+Leyte,Dulag,LY13
+Leyte,Hilongos,LY14
+Leyte,Hindang,LY15
+Leyte,Inopacan,LY16
+Leyte,Isabel,LY17
+Leyte,Jaro,LY18
+Leyte,Javier,LY19
+Leyte,Julita,LY20
+Leyte,Kananga,LY21
+Leyte,La Paz,LY22
+Leyte,Leyte,LY23
+Leyte,Macarthur,LY24
+Leyte,Mahaplag,LY25
+Leyte,Matag-Ob,LY26
+Leyte,Matalom,LY27
+Leyte,Mayorga,LY28
+Leyte,Merida,LY29
+Leyte,Ormoc City,LY30
+Leyte,Palo,LY31
+Leyte,Palompon,LY32
+Leyte,Pastrana,LY33
+Leyte,San Isidro,LY34
+Leyte,San Miguel,LY35
+Leyte,Santa Fe,LY36
+Leyte,Tabango,LY37
+Leyte,Tabontabon,LY38
+Leyte,Tacloban City,LY39
+Leyte,Tanauan,LY40
+Leyte,Tolosa,LY41
+Leyte,Tunga,LY42
+Leyte,Villaba,LY43
+Maguindanao,Ampatuan,MG01
+Maguindanao,Barira,MG02
+Maguindanao,Buldon,MG03
+Maguindanao,Buluan,MG04
+Maguindanao,Cotabato City,MG99
+Maguindanao,Datu Abdullah Sangki,MG05
+Maguindanao,Datu Anggal Midtimbang,MG06
+Maguindanao,Datu Blah T. Sinsuat,MG07
+Maguindanao,Datu Hoffer Ampatuan,MG08
+Maguindanao,Datu Odin Sinsuat,MG09
+Maguindanao,Datu Paglas,MG10
+Maguindanao,Datu Piang,MG11
+Maguindanao,Datu Salibo,MG12
+Maguindanao,Datu Saudi-Ampatuan,MG13
+Maguindanao,Datu Unsay,MG14
+Maguindanao,Gen. S. K. Pendatun,MG15
+Maguindanao,Guindulungan,MG16
+Maguindanao,Kabuntalan,MG17
+Maguindanao,Mamasapano,MG18
+Maguindanao,Mangudadatu,MG19
+Maguindanao,Matanog,MG20
+Maguindanao,Northern Kabuntalan,MG21
+Maguindanao,Pagagawan,MG22
+Maguindanao,Pagalungan,MG23
+Maguindanao,Paglat,MG24
+Maguindanao,Pandag,MG25
+Maguindanao,Parang,MG26
+Maguindanao,Rajah Buayan,MG27
+Maguindanao,Shariff Aguak,MG28
+Maguindanao,Shariff Saydona Mustapha,MG29
+Maguindanao,South Upi,MG30
+Maguindanao,Sultan Kudarat,MG31
+Maguindanao,Sultan Mastura,MG32
+Maguindanao,Sultan Sa Barongis,MG33
+Maguindanao,Talayan,MG34
+Maguindanao,Talitay,MG35
+Maguindanao,Upi,MG36
+Marinduque,Boac,MQ01
+Marinduque,Buenavista,MQ02
+Marinduque,Gasan,MQ03
+Marinduque,Mogpog,MQ04
+Marinduque,Santa Cruz,MQ05
+Marinduque,Torrijos,MQ06
+Masbate,Aroroy,MS01
+Masbate,Baleno,MS02
+Masbate,Balud,MS03
+Masbate,Batuan,MS04
+Masbate,Cataingan,MS05
+Masbate,Cawayan,MS06
+Masbate,Claveria,MS07
+Masbate,Dimasalang,MS08
+Masbate,Esperanza,MS09
+Masbate,Mandaon,MS10
+Masbate,Masbate City,MS11
+Masbate,Milagros,MS12
+Masbate,Mobo,MS13
+Masbate,Monreal,MS14
+Masbate,Palanas,MS15
+Masbate,Pio V. Corpuz,MS16
+Masbate,Placer,MS17
+Masbate,San Fernando,MS18
+Masbate,San Jacinto,MS19
+Masbate,San Pascual,MS20
+Masbate,Uson,MS21
+Metro Manila,Caloocan City,MM01
+Metro Manila,Las Pinas City,MM02
+Metro Manila,Makati City,MM03
+Metro Manila,Malabon City,MM04
+Metro Manila,Mandaluyong City,MM05
+Metro Manila,Manila,MM06
+Metro Manila,Marikina City,MM07
+Metro Manila,Muntinlupa City,MM08
+Metro Manila,Navotas City,MM09
+Metro Manila,Paranaque City,MM10
+Metro Manila,Pasay City,MM11
+Metro Manila,Pasig City,MM12
+Metro Manila,Pateros,MM13
+Metro Manila,Quezon City,MM14
+Metro Manila,San Juan City,MM15
+Metro Manila,Taguig City,MM16
+Metro Manila,Valenzuela City,MM17
+Misamis Occidental,Aloran,MC01
+Misamis Occidental,Baliangao,MC02
+Misamis Occidental,Bonifacio,MC03
+Misamis Occidental,Calamba,MC04
+Misamis Occidental,Clarin,MC05
+Misamis Occidental,Concepcion,MC06
+Misamis Occidental,Don Victoriano Chiongbian,MC17
+Misamis Occidental,Jimenez,MC07
+Misamis Occidental,Lopez Jaena,MC08
+Misamis Occidental,Oroquieta City,MC09
+Misamis Occidental,Ozamis City,MC10
+Misamis Occidental,Panaon,MC11
+Misamis Occidental,Plaridel,MC12
+Misamis Occidental,Sapang Dalaga,MC13
+Misamis Occidental,Sinacaban,MC14
+Misamis Occidental,Tangub City,MC15
+Misamis Occidental,Tudela,MC16
+Misamis Oriental,Alubijid,MR01
+Misamis Oriental,Balingasag,MR02
+Misamis Oriental,Balingoan,MR03
+Misamis Oriental,Binuangan,MR04
+Misamis Oriental,Cagayan de Oro City,MR05
+Misamis Oriental,Claveria,MR06
+Misamis Oriental,El Salvador City,MR07
+Misamis Oriental,Gingoog City,MR08
+Misamis Oriental,Gitagum,MR09
+Misamis Oriental,Initao,MR10
+Misamis Oriental,Jasaan,MR11
+Misamis Oriental,Kinoguitan,MR12
+Misamis Oriental,Lagonglong,MR13
+Misamis Oriental,Laguindingan,MR14
+Misamis Oriental,Libertad,MR15
+Misamis Oriental,Lugait,MR16
+Misamis Oriental,Magsaysay,MR26
+Misamis Oriental,Manticao,MR17
+Misamis Oriental,Medina,MR18
+Misamis Oriental,Naawan,MR19
+Misamis Oriental,Opol,MR20
+Misamis Oriental,Salay,MR21
+Misamis Oriental,Sugbongcogon,MR22
+Misamis Oriental,Tagoloan,MR23
+Misamis Oriental,Talisayan,MR24
+Misamis Oriental,Villanueva,MR25
+Mountain Province,Barlig,MP01
+Mountain Province,Bauko,MP02
+Mountain Province,Besao,MP03
+Mountain Province,Bontoc,MP04
+Mountain Province,Natonin,MP05
+Mountain Province,Paracelis,MP06
+Mountain Province,Sabangan,MP07
+Mountain Province,Sadanga,MP08
+Mountain Province,Sagada,MP09
+Mountain Province,Tadian,MP10
+Negros Occidental,Bacolod City,NC01
+Negros Occidental,Bago City,NC02
+Negros Occidental,Binalbagan,NC03
+Negros Occidental,Cadiz City,NC04
+Negros Occidental,Calatrava,NC05
+Negros Occidental,Candoni,NC06
+Negros Occidental,Cauayan,NC07
+Negros Occidental,Enrique B. Magalona,NC08
+Negros Occidental,Escalante City,NC09
+Negros Occidental,Himamaylan City,NC10
+Negros Occidental,Hinigaran,NC11
+Negros Occidental,Hinoba-An,NC12
+Negros Occidental,Ilog,NC13
+Negros Occidental,Isabela,NC14
+Negros Occidental,Kabankalan City,NC15
+Negros Occidental,La Carlota City,NC16
+Negros Occidental,La Castellana,NC17
+Negros Occidental,Manapla,NC18
+Negros Occidental,Moises Padilla,NC19
+Negros Occidental,Murcia,NC20
+Negros Occidental,Pontevedra,NC21
+Negros Occidental,Pulupandan,NC22
+Negros Occidental,Sagay City,NC23
+Negros Occidental,Salvador Benedicto,NC24
+Negros Occidental,San Carlos City,NC25
+Negros Occidental,San Enrique,NC26
+Negros Occidental,Silay City,NC27
+Negros Occidental,Sipalay City,NC28
+Negros Occidental,Talisay City,NC29
+Negros Occidental,Toboso,NC30
+Negros Occidental,Valladolid,NC31
+Negros Occidental,Victorias City,NC32
+Negros Oriental,Amlan,NR01
+Negros Oriental,Ayungon,NR02
+Negros Oriental,Bacong,NR03
+Negros Oriental,Bais City,NR04
+Negros Oriental,Basay,NR05
+Negros Oriental,Bayawan City,NR06
+Negros Oriental,Bindoy,NR07
+Negros Oriental,Canlaon City,NR08
+Negros Oriental,Dauin,NR09
+Negros Oriental,Dumaguete City,NR10
+Negros Oriental,Guihulngan City,NR11
+Negros Oriental,Jimalalud,NR12
+Negros Oriental,La Libertad,NR13
+Negros Oriental,Mabinay,NR14
+Negros Oriental,Manjuyod,NR15
+Negros Oriental,Pamplona,NR16
+Negros Oriental,San Jose,NR17
+Negros Oriental,Santa Catalina,NR18
+Negros Oriental,Siaton,NR19
+Negros Oriental,Sibulan,NR20
+Negros Oriental,Tanjay City,NR21
+Negros Oriental,Tayasan,NR22
+Negros Oriental,Valencia,NR23
+Negros Oriental,Vallehermoso,NR24
+Negros Oriental,Zamboanguita,NR25
+Northern Samar,Allen,NS01
+Northern Samar,Biri,NS02
+Northern Samar,Bobon,NS03
+Northern Samar,Capul,NS04
+Northern Samar,Catarman,NS05
+Northern Samar,Catubig,NS06
+Northern Samar,Gamay,NS07
+Northern Samar,Laoang,NS08
+Northern Samar,Lapinig,NS09
+Northern Samar,Las Navas,NS10
+Northern Samar,Lavezares,NS11
+Northern Samar,Lope de Vega,NS24
+Northern Samar,Mapanas,NS12
+Northern Samar,Mondragon,NS13
+Northern Samar,Palapag,NS14
+Northern Samar,Pambujan,NS15
+Northern Samar,Rosario,NS16
+Northern Samar,San Antonio,NS17
+Northern Samar,San Isidro,NS18
+Northern Samar,San Jose,NS19
+Northern Samar,San Roque,NS20
+Northern Samar,San Vicente,NS21
+Northern Samar,Silvino Lobos,NS22
+Northern Samar,Victoria,NS23
+Nueva Ecija,Aliaga,NE01
+Nueva Ecija,Bongabon,NE02
+Nueva Ecija,Cabanatuan City,NE03
+Nueva Ecija,Cabiao,NE04
+Nueva Ecija,Carranglan,NE05
+Nueva Ecija,Cuyapo,NE06
+Nueva Ecija,Gabaldon,NE07
+Nueva Ecija,Gapan City,NE08
+Nueva Ecija,General Mamerto Natividad,NE09
+Nueva Ecija,General Tinio,NE10
+Nueva Ecija,Guimba,NE11
+Nueva Ecija,Jaen,NE12
+Nueva Ecija,Laur,NE13
+Nueva Ecija,Licab,NE14
+Nueva Ecija,Llanera,NE15
+Nueva Ecija,Lupao,NE16
+Nueva Ecija,Nampicuan,NE17
+Nueva Ecija,Palayan City,NE18
+Nueva Ecija,Pantabangan,NE19
+Nueva Ecija,Penaranda,NE20
+Nueva Ecija,Quezon,NE21
+Nueva Ecija,Rizal,NE22
+Nueva Ecija,San Antonio,NE23
+Nueva Ecija,San Isidro,NE24
+Nueva Ecija,San Jose City,NE25
+Nueva Ecija,San Leonardo,NE26
+Nueva Ecija,Santa Rosa,NE27
+Nueva Ecija,Santo Domingo,NE28
+Nueva Ecija,Science City of Munoz,NE29
+Nueva Ecija,Talavera,NE30
+Nueva Ecija,Talugtug,NE31
+Nueva Ecija,Zaragoza,NE32
+Nueva Vizcaya,Alfonso Castaneda,NV15
+Nueva Vizcaya,Ambaguio,NV01
+Nueva Vizcaya,Aritao,NV02
+Nueva Vizcaya,Bagabag,NV03
+Nueva Vizcaya,Bambang,NV04
+Nueva Vizcaya,Bayombong,NV05
+Nueva Vizcaya,Diadi,NV06
+Nueva Vizcaya,Dupax Del Norte,NV07
+Nueva Vizcaya,Dupax Del Sur,NV08
+Nueva Vizcaya,Kasibu,NV09
+Nueva Vizcaya,Kayapa,NV10
+Nueva Vizcaya,Quezon,NV11
+Nueva Vizcaya,Santa Fe,NV12
+Nueva Vizcaya,Solano,NV13
+Nueva Vizcaya,Villaverde,NV14
+Occidental Mindoro,Abra de Ilog,OC01
+Occidental Mindoro,Calintaan,OC02
+Occidental Mindoro,Looc,OC03
+Occidental Mindoro,Lubang,OC04
+Occidental Mindoro,Magsaysay,OC05
+Occidental Mindoro,Mamburao,OC06
+Occidental Mindoro,Paluan,OC07
+Occidental Mindoro,Rizal,OC08
+Occidental Mindoro,Sablayan,OC09
+Occidental Mindoro,San Jose,OC10
+Occidental Mindoro,Santa Cruz,OC11
+Oriental Mindoro,Baco,OR01
+Oriental Mindoro,Bansud,OR02
+Oriental Mindoro,Bongabong,OR03
+Oriental Mindoro,Bulalacao,OR04
+Oriental Mindoro,Calapan City,OR05
+Oriental Mindoro,Gloria,OR06
+Oriental Mindoro,Mansalay,OR07
+Oriental Mindoro,Naujan,OR08
+Oriental Mindoro,Pinamalayan,OR09
+Oriental Mindoro,Pola,OR10
+Oriental Mindoro,Puerto Galera,OR11
+Oriental Mindoro,Roxas,OR12
+Oriental Mindoro,San Teodoro,OR13
+Oriental Mindoro,Socorro,OR14
+Oriental Mindoro,Victoria,OR15
+Palawan,Aborlan,PW01
+Palawan,Agutaya,PW02
+Palawan,Araceli,PW03
+Palawan,Balabac,PW04
+Palawan,Bataraza,PW05
+Palawan,Brooke's Point,PW06
+Palawan,Busuanga,PW07
+Palawan,Cagayancillo,PW08
+Palawan,Coron,PW09
+Palawan,Culion,PW11
+Palawan,Cuyo,PW10
+Palawan,Dumaran,PW12
+Palawan,El Nido,PW13
+Palawan,Kalayaan,PW22
+Palawan,Linapacan,PW14
+Palawan,Magsaysay,PW15
+Palawan,Narra,PW16
+Palawan,Puerto Princesa City,PW17
+Palawan,Quezon,PW18
+Palawan,Rizal,PW23
+Palawan,Roxas,PW19
+Palawan,San Vicente,PW20
+Palawan,Sofronio Espanola,PW24
+Palawan,Taytay,PW21
+Pampanga,Angeles City,PM01
+Pampanga,Apalit,PM02
+Pampanga,Arayat,PM03
+Pampanga,Bacolor,PM04
+Pampanga,Candaba,PM05
+Pampanga,Floridablanca,PM06
+Pampanga,Guagua,PM07
+Pampanga,Lubao,PM08
+Pampanga,Mabalacat City,PM09
+Pampanga,Macabebe,PM10
+Pampanga,Magalang,PM11
+Pampanga,Masantol,PM12
+Pampanga,Mexico,PM13
+Pampanga,Minalin,PM14
+Pampanga,Porac,PM15
+Pampanga,San Fernando City,PM16
+Pampanga,San Luis,PM17
+Pampanga,San Simon,PM18
+Pampanga,Santa Ana,PM19
+Pampanga,Santa Rita,PM20
+Pampanga,Santo Tomas,PM21
+Pampanga,Sasmuan,PM22
+Pangasinan,Agno,PG01
+Pangasinan,Aguilar,PG02
+Pangasinan,Alaminos City,PG03
+Pangasinan,Alcala,PG04
+Pangasinan,Anda,PG05
+Pangasinan,Asingan,PG06
+Pangasinan,Balungao,PG07
+Pangasinan,Bani,PG08
+Pangasinan,Basista,PG09
+Pangasinan,Bautista,PG10
+Pangasinan,Bayambang,PG11
+Pangasinan,Binalonan,PG12
+Pangasinan,Binmaley,PG13
+Pangasinan,Bolinao,PG14
+Pangasinan,Bugallon,PG15
+Pangasinan,Burgos,PG16
+Pangasinan,Calasiao,PG17
+Pangasinan,Dagupan City,PG18
+Pangasinan,Dasol,PG19
+Pangasinan,Infanta,PG20
+Pangasinan,Labrador,PG21
+Pangasinan,Laoac,PG48
+Pangasinan,Lingayen,PG22
+Pangasinan,Mabini,PG23
+Pangasinan,Malasiqui,PG24
+Pangasinan,Manaoag,PG25
+Pangasinan,Mangaldan,PG26
+Pangasinan,Mangatarem,PG27
+Pangasinan,Mapandan,PG28
+Pangasinan,Natividad,PG29
+Pangasinan,Pozorrubio,PG30
+Pangasinan,Rosales,PG31
+Pangasinan,San Carlos City,PG32
+Pangasinan,San Fabian,PG33
+Pangasinan,San Jacinto,PG34
+Pangasinan,San Manuel,PG35
+Pangasinan,San Nicolas,PG36
+Pangasinan,San Quintin,PG37
+Pangasinan,Santa Barbara,PG38
+Pangasinan,Santa Maria,PG39
+Pangasinan,Santo Tomas,PG40
+Pangasinan,Sison,PG41
+Pangasinan,Sual,PG42
+Pangasinan,Tayug,PG43
+Pangasinan,Umingan,PG44
+Pangasinan,Urbiztondo,PG45
+Pangasinan,Urdaneta City,PG46
+Pangasinan,Villasis,PG47
+Quezon,Agdangan,QZ01
+Quezon,Alabat,QZ02
+Quezon,Atimonan,QZ03
+Quezon,Buenavista,QZ04
+Quezon,Burdeos,QZ05
+Quezon,Calauag,QZ06
+Quezon,Candelaria,QZ07
+Quezon,Catanauan,QZ08
+Quezon,Dolores,QZ09
+Quezon,General Luna,QZ10
+Quezon,General Nakar,QZ11
+Quezon,Guinayangan,QZ12
+Quezon,Gumaca,QZ13
+Quezon,Infanta,QZ14
+Quezon,Jomalig,QZ15
+Quezon,Lopez,QZ16
+Quezon,Lucban,QZ17
+Quezon,Lucena City,QZ18
+Quezon,Macalelon,QZ19
+Quezon,Mauban,QZ20
+Quezon,Mulanay,QZ21
+Quezon,Padre Burgos,QZ22
+Quezon,Pagbilao,QZ23
+Quezon,Panukulan,QZ24
+Quezon,Patnanungan,QZ25
+Quezon,Perez,QZ26
+Quezon,Pitogo,QZ27
+Quezon,Plaridel,QZ28
+Quezon,Polillo,QZ29
+Quezon,Quezon,QZ30
+Quezon,Real,QZ31
+Quezon,Sampaloc,QZ32
+Quezon,San Andres,QZ33
+Quezon,San Antonio,QZ34
+Quezon,San Francisco,QZ35
+Quezon,San Narciso,QZ36
+Quezon,Sariaya,QZ37
+Quezon,Tagkawayan,QZ38
+Quezon,Tayabas City,QZ39
+Quezon,Tiaong,QZ40
+Quezon,Unisan,QZ41
+Quirino,Aglipay,QI01
+Quirino,Cabarroguis,QI02
+Quirino,Diffun,QI03
+Quirino,Maddela,QI04
+Quirino,Nagtipunan,QI06
+Quirino,Saguday,QI05
+Rizal,Angono,RZ01
+Rizal,Antipolo City,RZ02
+Rizal,Baras,RZ03
+Rizal,Binangonan,RZ04
+Rizal,Cainta,RZ05
+Rizal,Cardona,RZ06
+Rizal,Jala-Jala,RZ07
+Rizal,Morong,RZ08
+Rizal,Pililla,RZ09
+Rizal,Rodriguez,RZ10
+Rizal,San Mateo,RZ11
+Rizal,Tanay,RZ12
+Rizal,Taytay,RZ13
+Rizal,Teresa,RZ14
+Romblon,Alcantara,RM01
+Romblon,Banton,RM02
+Romblon,Cajidiocan,RM03
+Romblon,Calatrava,RM04
+Romblon,Concepcion,RM05
+Romblon,Corcuera,RM06
+Romblon,Ferrol,RM16
+Romblon,Looc,RM07
+Romblon,Magdiwang,RM08
+Romblon,Odiongan,RM09
+Romblon,Romblon,RM10
+Romblon,San Agustin,RM11
+Romblon,San Andres,RM12
+Romblon,San Fernando,RM13
+Romblon,San Jose,RM14
+Romblon,Santa Fe,RM15
+Romblon,Santa Maria,RM17
+Samar,Almagro,SM01
+Samar,Basey,SM02
+Samar,Calbayog City,SM03
+Samar,Calbiga,SM04
+Samar,Catbalogan City,SM05
+Samar,Daram,SM06
+Samar,Gandara,SM07
+Samar,Hinabangan,SM08
+Samar,Jiabong,SM09
+Samar,Marabut,SM10
+Samar,Matuguinao,SM11
+Samar,Motiong,SM12
+Samar,Pagsanghan,SM26
+Samar,Paranas,SM22
+Samar,Pinabacdao,SM13
+Samar,San Jorge,SM25
+Samar,San Jose de Buan,SM14
+Samar,San Sebastian,SM15
+Samar,Santa Margarita,SM16
+Samar,Santa Rita,SM17
+Samar,Santo Nino,SM18
+Samar,Tagapul-An,SM24
+Samar,Talalora,SM19
+Samar,Tarangnan,SM20
+Samar,Villareal,SM21
+Samar,Zumarraga,SM23
+Sarangani,Alabel,SI01
+Sarangani,Glan,SI03
+Sarangani,Kiamba,SI04
+Sarangani,Maasim,SI05
+Sarangani,Maitum,SI06
+Sarangani,Malapatan,SI07
+Sarangani,Malungon,SI02
+Siquijor,Enrique Villanueva,SQ01
+Siquijor,Larena,SQ02
+Siquijor,Lazi,SQ03
+Siquijor,Maria,SQ04
+Siquijor,San Juan,SQ05
+Siquijor,Siquijor,SQ06
+Sorsogon,Barcelona,SO01
+Sorsogon,Bulan,SO02
+Sorsogon,Bulusan,SO03
+Sorsogon,Casiguran,SO04
+Sorsogon,Castilla,SO05
+Sorsogon,Donsol,SO06
+Sorsogon,Gubat,SO07
+Sorsogon,Irosin,SO08
+Sorsogon,Juban,SO09
+Sorsogon,Magallanes,SO10
+Sorsogon,Matnog,SO11
+Sorsogon,Pilar,SO12
+Sorsogon,Prieto Diaz,SO13
+Sorsogon,Santa Magdalena,SO14
+Sorsogon,Sorsogon City,SO15
+South Cotabato,Banga,SC01
+South Cotabato,General Santos City,SC02
+South Cotabato,Koronadal City,SC03
+South Cotabato,Lake Sebu,SC04
+South Cotabato,Norala,SC05
+South Cotabato,Polomolok,SC06
+South Cotabato,Santo Nino,SC07
+South Cotabato,Surallah,SC08
+South Cotabato,T'Boli,SC12
+South Cotabato,Tampakan,SC09
+South Cotabato,Tantangan,SC10
+South Cotabato,Tupi,SC11
+Southern Leyte,Anahawan,SL01
+Southern Leyte,Bontoc,SL02
+Southern Leyte,Hinunangan,SL03
+Southern Leyte,Hinundayan,SL04
+Southern Leyte,Libagon,SL05
+Southern Leyte,Liloan,SL06
+Southern Leyte,Limasawa,SL19
+Southern Leyte,Maasin City,SL07
+Southern Leyte,Macrohon,SL08
+Southern Leyte,Malitbog,SL09
+Southern Leyte,Padre Burgos,SL10
+Southern Leyte,Pintuyan,SL11
+Southern Leyte,Saint Bernard,SL12
+Southern Leyte,San Francisco,SL13
+Southern Leyte,San Juan,SL14
+Southern Leyte,San Ricardo,SL15
+Southern Leyte,Silago,SL16
+Southern Leyte,Sogod,SL17
+Southern Leyte,Tomas Oppus,SL18
+Sultan Kudarat,Bagumbayan,SK01
+Sultan Kudarat,Columbio,SK02
+Sultan Kudarat,Esperanza,SK03
+Sultan Kudarat,Isulan,SK04
+Sultan Kudarat,Kalamansig,SK05
+Sultan Kudarat,Lambayong,SK08
+Sultan Kudarat,Lebak,SK06
+Sultan Kudarat,Lutayan,SK07
+Sultan Kudarat,Palimbang,SK09
+Sultan Kudarat,President Quirino,SK10
+Sultan Kudarat,Sen. Ninoy Aquino,SK12
+Sultan Kudarat,Tacurong City,SK11
+Sulu,Hadji Panglima Tahil,SU06
+Sulu,Indanan,SU01
+Sulu,Jolo,SU02
+Sulu,Kalingalan Caluang,SU03
+Sulu,Lugus,SU17
+Sulu,Luuk,SU04
+Sulu,Maimbung,SU05
+Sulu,Old Panamao,SU07
+Sulu,Omar,SU19
+Sulu,Pandami,SU18
+Sulu,Panglima Estino,SU16
+Sulu,Pangutaran,SU08
+Sulu,Parang,SU09
+Sulu,Pata,SU10
+Sulu,Patikul,SU11
+Sulu,Siasi,SU12
+Sulu,Talipao,SU13
+Sulu,Tapul,SU14
+Sulu,Tongkil,SU15
+Surigao Del Norte,Alegria,SN01
+Surigao Del Norte,Bacuag,SN02
+Surigao Del Norte,Burgos,SN03
+Surigao Del Norte,Claver,SN04
+Surigao Del Norte,Dapa,SN05
+Surigao Del Norte,Del Carmen,SN06
+Surigao Del Norte,General Luna,SN07
+Surigao Del Norte,Gigaquit,SN08
+Surigao Del Norte,Mainit,SN09
+Surigao Del Norte,Malimono,SN10
+Surigao Del Norte,Pilar,SN11
+Surigao Del Norte,Placer,SN12
+Surigao Del Norte,San Benito,SN13
+Surigao Del Norte,San Francisco,SN14
+Surigao Del Norte,San Isidro,SN15
+Surigao Del Norte,Santa Monica,SN16
+Surigao Del Norte,Sison,SN17
+Surigao Del Norte,Socorro,SN18
+Surigao Del Norte,Surigao City,SN19
+Surigao Del Norte,Tagana-An,SN20
+Surigao Del Norte,Tubod,SN21
+Surigao Del Sur,Barobo,SS01
+Surigao Del Sur,Bayabas,SS02
+Surigao Del Sur,Bislig City,SS03
+Surigao Del Sur,Cagwait,SS04
+Surigao Del Sur,Cantilan,SS05
+Surigao Del Sur,Carmen,SS06
+Surigao Del Sur,Carrascal,SS07
+Surigao Del Sur,Cortes,SS08
+Surigao Del Sur,Hinatuan,SS09
+Surigao Del Sur,Lanuza,SS10
+Surigao Del Sur,Lianga,SS11
+Surigao Del Sur,Lingig,SS12
+Surigao Del Sur,Madrid,SS13
+Surigao Del Sur,Marihatag,SS14
+Surigao Del Sur,San Agustin,SS15
+Surigao Del Sur,San Miguel,SS16
+Surigao Del Sur,Tagbina,SS17
+Surigao Del Sur,Tago,SS18
+Surigao Del Sur,Tandag City,SS19
+Tarlac,Anao,TR01
+Tarlac,Bamban,TR02
+Tarlac,Camiling,TR03
+Tarlac,Capas,TR04
+Tarlac,Concepcion,TR05
+Tarlac,Gerona,TR06
+Tarlac,La Paz,TR07
+Tarlac,Mayantoc,TR08
+Tarlac,Moncada,TR09
+Tarlac,Paniqui,TR10
+Tarlac,Pura,TR11
+Tarlac,Ramos,TR12
+Tarlac,San Clemente,TR13
+Tarlac,San Jose,TR14
+Tarlac,San Manuel,TR15
+Tarlac,Santa Ignacia,TR16
+Tarlac,Tarlac City,TR17
+Tarlac,Victoria,TR18
+Tawi-Tawi,Bongao,TW02
+Tawi-Tawi,Languyan,TW09
+Tawi-Tawi,Mapun,TW03
+Tawi-Tawi,Panglima Sugala,TW01
+Tawi-Tawi,Sapa-Sapa,TW10
+Tawi-Tawi,Sibutu,TW11
+Tawi-Tawi,Simunul,TW04
+Tawi-Tawi,Sitangkai,TW05
+Tawi-Tawi,South Ubian,TW06
+Tawi-Tawi,Tandubas,TW07
+Tawi-Tawi,Turtle Islands,TW08
+Zambales,Botolan,ZM01
+Zambales,Cabangan,ZM02
+Zambales,Candelaria,ZM03
+Zambales,Castillejos,ZM04
+Zambales,Iba,ZM05
+Zambales,Masinloc,ZM06
+Zambales,Olongapo City,ZM07
+Zambales,Palauig,ZM08
+Zambales,San Antonio,ZM09
+Zambales,San Felipe,ZM10
+Zambales,San Marcelino,ZM11
+Zambales,San Narciso,ZM12
+Zambales,Santa Cruz,ZM13
+Zambales,Subic,ZM14
+Zamboanga Del Norte,Bacungan,ZN01
+Zamboanga Del Norte,Baliguian,ZN02
+Zamboanga Del Norte,Dapitan City,ZN03
+Zamboanga Del Norte,Dipolog City,ZN04
+Zamboanga Del Norte,Godod,ZN05
+Zamboanga Del Norte,Gutalac,ZN06
+Zamboanga Del Norte,Jose Dalman,ZN07
+Zamboanga Del Norte,Kalawit,ZN08
+Zamboanga Del Norte,Katipunan,ZN09
+Zamboanga Del Norte,La Libertad,ZN10
+Zamboanga Del Norte,Labason,ZN11
+Zamboanga Del Norte,Liloy,ZN12
+Zamboanga Del Norte,Manukan,ZN13
+Zamboanga Del Norte,Mutia,ZN14
+Zamboanga Del Norte,Pinan,ZN15
+Zamboanga Del Norte,Polanco,ZN16
+Zamboanga Del Norte,Pres. Manuel A. Roxas,ZN17
+Zamboanga Del Norte,Rizal,ZN18
+Zamboanga Del Norte,Salug,ZN19
+Zamboanga Del Norte,Sergio Osmena Sr.,ZN20
+Zamboanga Del Norte,Siayan,ZN21
+Zamboanga Del Norte,Sibuco,ZN22
+Zamboanga Del Norte,Sibutad,ZN23
+Zamboanga Del Norte,Sindangan,ZN24
+Zamboanga Del Norte,Siocon,ZN25
+Zamboanga Del Norte,Sirawai,ZN26
+Zamboanga Del Norte,Tampilisan,ZN27
+Zamboanga Del Sur,Aurora,ZS01
+Zamboanga Del Sur,Bayog,ZS02
+Zamboanga Del Sur,Dimataling,ZS03
+Zamboanga Del Sur,Dinas,ZS04
+Zamboanga Del Sur,Dumalinao,ZS05
+Zamboanga Del Sur,Dumingag,ZS06
+Zamboanga Del Sur,Guipos,ZS07
+Zamboanga Del Sur,Josefina,ZS08
+Zamboanga Del Sur,Kumalarang,ZS09
+Zamboanga Del Sur,Labangan,ZS10
+Zamboanga Del Sur,Lakewood,ZS11
+Zamboanga Del Sur,Lapuyan,ZS12
+Zamboanga Del Sur,Mahayag,ZS13
+Zamboanga Del Sur,Margosatubig,ZS14
+Zamboanga Del Sur,Midsalip,ZS15
+Zamboanga Del Sur,Molave,ZS16
+Zamboanga Del Sur,Pagadian City,ZS17
+Zamboanga Del Sur,Pitogo,ZS18
+Zamboanga Del Sur,Ramon Magsaysay,ZS19
+Zamboanga Del Sur,San Miguel,ZS20
+Zamboanga Del Sur,San Pablo,ZS21
+Zamboanga Del Sur,Sominot,ZS22
+Zamboanga Del Sur,Tabina,ZS23
+Zamboanga Del Sur,Tambulig,ZS24
+Zamboanga Del Sur,Tigbao,ZS25
+Zamboanga Del Sur,Tukuran,ZS26
+Zamboanga Del Sur,Vincenzo A. Sagun,ZS27
+Zamboanga Del Sur,Zamboanga City,ZS28
+Zamboanga Sibugay,Alicia,ZY01
+Zamboanga Sibugay,Buug,ZY02
+Zamboanga Sibugay,Diplahan,ZY03
+Zamboanga Sibugay,Imelda,ZY04
+Zamboanga Sibugay,Ipil,ZY05
+Zamboanga Sibugay,Kabasalan,ZY06
+Zamboanga Sibugay,Mabuhay,ZY07
+Zamboanga Sibugay,Malangas,ZY08
+Zamboanga Sibugay,Naga,ZY09
+Zamboanga Sibugay,Olutanga,ZY10
+Zamboanga Sibugay,Payao,ZY11
+Zamboanga Sibugay,Roseller Lim,ZY12
+Zamboanga Sibugay,Siay,ZY13
+Zamboanga Sibugay,Talusan,ZY14
+Zamboanga Sibugay,Titay,ZY15
+Zamboanga Sibugay,Tungawan,ZY16

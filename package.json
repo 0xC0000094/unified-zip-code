@@ -1,0 +1,19 @@
+{
+  "name": "unified-zip-code",
+  "version": "1.0.0",
+  "description": "A seven character postal code for the Philippines, resolving to the barangay. The delivered code set for all 42,047 barangays, with a lookup.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./data": "./data/unified-zip-codes.json"
+  },
+  "files": ["src", "data", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "extract": "python3 scripts/extract.py"
+  },
+  "keywords": ["philippines", "postal-code", "zip-code", "barangay", "psgc", "addressing"],
+  "license": "MIT",
+  "engines": { "node": ">=18" }
+}
