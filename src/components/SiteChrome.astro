@@ -1,0 +1,177 @@
+---
+/**
+ * Shared chrome for jamesventura.dev projects.
+ *
+ * A project on a subdomain should read as part of one domain, not a separate
+ * app: the same theme control in the same place, the same footer, the same
+ * way back to the site. Copy this file, and the brand tokens it expects, into
+ * any new project. Nothing here is specific to the zip code project.
+ *
+ * Expects these custom properties to exist: --ink, --ink-2, --ink-3, --rule,
+ * --signal, --wash, --mono, and a :root[data-theme="dark"] block overriding
+ * them. See PROJECT-TEMPLATE.md at the portfolio root.
+ */
+interface Props {
+  /** Shown on the left of the bar. The project's own name. */
+  project: string;
+}
+const { project } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<div class="chrome-bar">
+  <a class="chrome-home" href="https://jamesventura.dev">James Ventura</a>
+  <span class="chrome-sep" aria-hidden="true">/</span>
+  <span class="chrome-project">{project}</span>
+
+  <div class="chrome-theme" data-theme-toggle>
+    <span class="sr-only" id="theme-label">Colour theme</span>
+    <div role="radiogroup" aria-labelledby="theme-label">
+      <button type="button" role="radio" aria-checked="false" data-theme-set="system">
+        <span aria-hidden="true">Auto</span><span class="sr-only">Match system</span>
+      </button>
+      <button type="button" role="radio" aria-checked="false" data-theme-set="light">Light</button>
+      <button type="button" role="radio" aria-checked="false" data-theme-set="dark">Dark</button>
+    </div>
+  </div>
+</div>
+
+<slot />
+
+<footer class="chrome-footer">
+  <p>James Ventura, {year}. Canada.</p>
+  <p>Every claim on this site links to something you can check.</p>
+</footer>
+
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .chrome-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+  }
+  .chrome-home {
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .chrome-home:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .chrome-sep,
+  .chrome-project {
+    color: var(--ink-3);
+  }
+  .chrome-theme {
+    margin-left: auto;
+  }
+  .chrome-theme > div {
+    display: flex;
+    gap: 1px;
+    border: 1px solid var(--rule);
+  }
+  .chrome-theme button {
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    background: transparent;
+    border: 0;
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+    transition: color 150ms ease, background-color 150ms ease;
+  }
+  .chrome-theme button:hover {
+    color: var(--ink);
+  }
+  .chrome-theme button[aria-checked="true"] {
+    color: var(--signal);
+    background: var(--wash);
+  }
+  .chrome-footer {
+    max-width: 46rem;
+    margin: 4rem auto 0;
+    padding: 1.5rem 1.25rem 3rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+  .chrome-footer p {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--ink-3);
+  }
+  @media (max-width: 34rem) {
+    .chrome-bar {
+      flex-wrap: wrap;
+    }
+    .chrome-theme {
+      width: 100%;
+      margin-left: 0;
+    }
+    .chrome-theme > div {
+      width: fit-content;
+    }
+  }
+</style>
+
+<script>
+  const KEY = "jv-theme";
+  const SHARED = "jamesventura.dev";
+  type Choice = "system" | "light" | "dark";
+
+  const read = (): Choice => {
+    const v = localStorage.getItem(KEY);
+    if (v === "light" || v === "dark" || v === "system") return v;
+    const m = document.cookie.match(/(?:^|;\s*)jv-theme=(light|dark|system)/);
+    return (m?.[1] as Choice) ?? "system";
+  };
+
+  function apply(choice: Choice) {
+    const dark =
+      choice === "dark" ||
+      (choice === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+    document.documentElement.dataset.theme = dark ? "dark" : "light";
+
+    if (choice === "system") localStorage.removeItem(KEY);
+    else localStorage.setItem(KEY, choice);
+
+    const onDomain =
+      location.hostname === SHARED || location.hostname.endsWith(`.${SHARED}`);
+    document.cookie =
+      `${KEY}=${choice}; path=/; max-age=31536000; samesite=lax` +
+      (onDomain ? `; domain=.${SHARED}` : "");
+
+    for (const b of document.querySelectorAll<HTMLButtonElement>("[data-theme-set]")) {
+      b.setAttribute("aria-checked", String(b.dataset.themeSet === choice));
+    }
+  }
+
+  apply(read());
+  for (const b of document.querySelectorAll<HTMLButtonElement>("[data-theme-set]")) {
+    b.addEventListener("click", () => apply(b.dataset.themeSet as Choice));
+  }
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+    if (read() === "system") apply("system");
+  });
+</script>

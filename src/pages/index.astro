@@ -3,6 +3,7 @@ import "@fontsource-variable/public-sans";
 import "@fontsource-variable/source-serif-4";
 import "@fontsource/ibm-plex-mono/400.css";
 import "@fontsource/ibm-plex-mono/600.css";
+import SiteChrome from "../components/SiteChrome.astro";
 import { db } from "../lib/data.ts";
 
 const count = db().count.toLocaleString();
@@ -36,6 +37,7 @@ const provinces = db().provinces().length;
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📮</text></svg>" />
   </head>
   <body>
+    <SiteChrome project="Unified ZIP Code">
     <header>
       <p class="eyebrow">Philippines</p>
       <h1>Unified ZIP Code</h1>
@@ -127,17 +129,7 @@ const provinces = db().provinces().length;
       </section>
     </main>
 
-    <footer>
-      <p>
-        <a href="https://github.com/0xC0000094/unified-zip-code">Source and data on GitHub</a>,
-        MIT. Built by <a href="https://jamesventura.dev">James Ventura</a>.
-      </p>
-      <p class="fine">
-        The Philippine Standard Geographic Code is published by the Philippine
-        Statistics Authority. The existing zip codes are published by the
-        Philippine Postal Corporation.
-      </p>
-    </footer>
+    </SiteChrome>
 
     <style>
       /*
@@ -188,7 +180,7 @@ const provinces = db().provinces().length;
         -webkit-text-size-adjust: 100%;
       }
       header, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
-      header { padding-top: 3.5rem; }
+      header { padding-top: 1.5rem; }
       .eyebrow {
         font-family: var(--mono);
         font-size: 0.75rem;
@@ -293,8 +285,6 @@ const provinces = db().provinces().length;
       a { color: var(--signal); text-decoration-thickness: 1px; text-underline-offset: 2px; }
       p { max-width: 34rem; }
       .note, .fine { font-size: 0.8125rem; color: var(--ink-3); }
-      footer { border-top: 1px solid var(--rule); padding-top: 1.25rem; padding-bottom: 3rem; }
-      footer p { margin: 0 0 0.5rem; font-size: 0.875rem; }
     </style>
 
     <script>
