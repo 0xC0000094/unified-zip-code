@@ -19,6 +19,20 @@ const provinces = db().provinces().length;
       name="description"
       content="A seven character postal code for the Philippines that resolves to the barangay. All 42,047 of them, with a lookup and an API."
     />
+    <script is:inline>
+      // The theme chosen on jamesventura.dev, shared by cookie across the
+      // domain. No selector here: this page follows the site rather than
+      // offering a second, separate control.
+      (() => {
+        const m = document.cookie.match(/(?:^|;\s*)jv-theme=(light|dark|system)/);
+        const choice = m ? m[1] : "system";
+        const dark =
+          choice === "dark" ||
+          (choice !== "light" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📮</text></svg>" />
   </head>
   <body>
@@ -128,11 +142,12 @@ const provinces = db().provinces().length;
     <style>
       /*
        * The jamesventura.dev brand kit, verbatim: bone paper, blue-black ink,
-       * one deep pine signal, rationed. Light only, like the site. The brand
-       * has no dark mode, and a derived one made this page read as a different
-       * product next to the site on any OS set to dark.
+       * one deep pine signal, rationed. The dark values are the site's own,
+       * applied only when the reader has chosen dark there; the choice travels
+       * in a cookie shared across the domain. This page has no selector of its
+       * own, so the two can never disagree.
        */
-      :root {
+      :root, :root[data-theme="light"] {
         color-scheme: light;
         --bg: #e7e9e4;
         --surface: #f2f3ef;
@@ -147,6 +162,19 @@ const provinces = db().provinces().length;
         --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
         --sans: "Public Sans Variable", ui-sans-serif, system-ui, sans-serif;
         --serif: "Source Serif 4 Variable", ui-serif, Georgia, serif;
+      }
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --bg: #13181c;
+        --surface: #171d22;
+        --raised: #1b2227;
+        --ink: #e7e9e4;
+        --ink-2: #a6b0b0;
+        --ink-3: #6f7a7d;
+        --rule: #2a3236;
+        --rule-strong: #3d474d;
+        --signal: #57a58f;
+        --wash: #16302a;
       }
       }
       * { box-sizing: border-box; }
