@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
-import { limited } from "../../lib/rate-limit";
-import { db } from "../../lib/data";
-import { ok } from "../../lib/http";
+import { limited } from "../../lib/rate-limit.ts";
+import { db } from "../../lib/data.ts";
+import { ok } from "../../lib/http.ts";
 
 export const prerender = false;
 

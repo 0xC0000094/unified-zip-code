@@ -1,5 +1,5 @@
 ---
-import { db } from "../lib/data";
+import { db } from "../lib/data.ts";
 
 const count = db().count.toLocaleString();
 const provinces = db().provinces().length;
