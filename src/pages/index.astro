@@ -127,12 +127,13 @@ const provinces = db().provinces().length;
 
     <style>
       /*
-       * The jamesventura.dev brand kit, verbatim in the light: bone paper,
-       * blue-black ink, one deep pine signal, rationed. Dark mode is the same
-       * brand at night: the blue-black ink becomes the paper, bone becomes the
-       * ink, and the signal keeps its pine hue, lightened only enough to read.
+       * The jamesventura.dev brand kit, verbatim: bone paper, blue-black ink,
+       * one deep pine signal, rationed. Light only, like the site. The brand
+       * has no dark mode, and a derived one made this page read as a different
+       * product next to the site on any OS set to dark.
        */
       :root {
+        color-scheme: light;
         --bg: #e7e9e4;
         --surface: #f2f3ef;
         --raised: #fafbf8;
@@ -147,19 +148,6 @@ const provinces = db().provinces().length;
         --sans: "Public Sans Variable", ui-sans-serif, system-ui, sans-serif;
         --serif: "Source Serif 4 Variable", ui-serif, Georgia, serif;
       }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #13181c;
-          --surface: #171d22;
-          --raised: #1b2227;
-          --ink: #e7e9e4;
-          --ink-2: #a6b0b0;
-          --ink-3: #6f7a7d;
-          --rule: #2a3236;
-          --rule-strong: #3d474d;
-          --signal: #57a58f;
-          --wash: #16302a;
-        }
       }
       * { box-sizing: border-box; }
       body {
