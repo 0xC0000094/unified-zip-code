@@ -1,4 +1,8 @@
 ---
+import "@fontsource-variable/public-sans";
+import "@fontsource-variable/source-serif-4";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/600.css";
 import { db } from "../lib/data.ts";
 
 const count = db().count.toLocaleString();
@@ -122,30 +126,39 @@ const provinces = db().provinces().length;
     </footer>
 
     <style>
+      /*
+       * The jamesventura.dev brand kit, verbatim in the light: bone paper,
+       * blue-black ink, one deep pine signal, rationed. Dark mode is the same
+       * brand at night: the blue-black ink becomes the paper, bone becomes the
+       * ink, and the signal keeps its pine hue, lightened only enough to read.
+       */
       :root {
+        --bg: #e7e9e4;
+        --surface: #f2f3ef;
+        --raised: #fafbf8;
         --ink: #13181c;
         --ink-2: #59646c;
         --ink-3: #8a939a;
-        --rule: #d8dcd6;
+        --rule: #cdd2ca;
         --rule-strong: #b3bab0;
-        --bg: #fbfaf7;
-        --raised: #fff;
         --signal: #17564a;
-        --wash: #e6ede9;
-        --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
-        --sans: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+        --wash: #dfe7e2;
+        --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        --sans: "Public Sans Variable", ui-sans-serif, system-ui, sans-serif;
+        --serif: "Source Serif 4 Variable", ui-serif, Georgia, serif;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --ink: #e8eae7;
-          --ink-2: #9aa4a0;
-          --ink-3: #6f7a76;
-          --rule: #2a3230;
-          --rule-strong: #3c4643;
-          --bg: #0e1211;
-          --raised: #151a19;
-          --signal: #6fbfa6;
-          --wash: #17241f;
+          --bg: #13181c;
+          --surface: #171d22;
+          --raised: #1b2227;
+          --ink: #e7e9e4;
+          --ink-2: #a6b0b0;
+          --ink-3: #6f7a7d;
+          --rule: #2a3236;
+          --rule-strong: #3d474d;
+          --signal: #57a58f;
+          --wash: #16302a;
         }
       }
       * { box-sizing: border-box; }
@@ -153,8 +166,9 @@ const provinces = db().provinces().length;
         margin: 0;
         background: var(--bg);
         color: var(--ink);
-        font-family: var(--sans);
-        line-height: 1.6;
+        font-family: var(--serif);
+        font-size: 1.0625rem;
+        line-height: 1.65;
         -webkit-text-size-adjust: 100%;
       }
       header, main, footer { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
@@ -167,9 +181,9 @@ const provinces = db().provinces().length;
         color: var(--ink-3);
         margin: 0;
       }
-      h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; margin: 0.5rem 0 0; letter-spacing: -0.02em; }
+      h1 { font-family: var(--sans); font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.12; margin: 0.5rem 0 0; letter-spacing: -0.014em; font-weight: 600; }
       .lede { font-size: 1.125rem; color: var(--ink-2); max-width: 34rem; }
-      h2 { font-size: 1.25rem; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+      h2 { font-family: var(--sans); font-size: 1.25rem; margin: 0 0 0.5rem; letter-spacing: -0.014em; font-weight: 600; }
 
       .anatomy {
         margin: 2rem 0 0;
