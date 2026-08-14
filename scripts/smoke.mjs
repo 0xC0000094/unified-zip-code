@@ -5,33 +5,74 @@
  *   npm run smoke                          # https://zip.jamesventura.dev
  *   npm run smoke -- https://<preview-url>
  *
- * This exists because of an outage the unit tests could not see. A dependency
- * moved to devDependencies, the local build and all tests passed, and the
- * deployed function crashed on every request with ERR_MODULE_NOT_FOUND,
- * because Vercel prunes the runtime tree to production dependencies. Then the
- * fix redeployed against the broken build's cache and crashed the same way.
- * Nothing short of requesting the deployed artifact catches that class of
- * failure, so this script requests the deployed artifact.
+ * This exists because of two failures the unit tests could not see.
+ *
+ * First, a function that crashed at invocation while every test passed: the
+ * deployed artifact was broken in ways no local check exercises, so this
+ * script requests the deployed artifact.
+ *
+ * Second, a test run that passed against the vercel.app alias while the real
+ * domain was unreachable: testing a stand-in hostname proves nothing about the
+ * one visitors use. So this script resolves the target domain through public
+ * DNS (DNS over HTTPS, bypassing whatever the local resolver believes),
+ * connects to the resolved address directly, and validates the TLS
+ * certificate for the domain as part of the suite. If DNS points at a parking
+ * server or the certificate is wrong, the run fails loudly instead of quietly
+ * testing the wrong thing.
  */
 
-const base = (process.argv[2] ?? "https://zip.jamesventura.dev").replace(/\/$/, "");
+import https from "node:https";
+
+const base = new URL(process.argv[2] ?? "https://zip.jamesventura.dev");
+const host = base.hostname;
 
 let failures = 0;
-async function get(path) {
-  // One retry, for transport errors only. A bad HTTP status is a result, not
-  // a reason to retry; a socket that never connected is noise.
-  try {
-    return await fetch(base + path, { headers: { accept: "application/json" } });
-  } catch {
-    await new Promise((r) => setTimeout(r, 2000));
-    return fetch(base + path, { headers: { accept: "application/json" } });
-  }
+const expect = (cond, message) => {
+  if (!cond) throw new Error(message);
+};
+
+/** Resolve through public DNS, not the local resolver. */
+async function resolveHost(name) {
+  const res = await fetch(
+    `https://cloudflare-dns.com/dns-query?name=${name}&type=A`,
+    { headers: { accept: "application/dns-json" } },
+  );
+  const body = await res.json();
+  const ips = (body.Answer ?? []).filter((a) => a.type === 1).map((a) => a.data);
+  expect(ips.length > 0, `public DNS returned no A records for ${name}`);
+  return ips;
 }
 
-async function check(name, path, assertion) {
+/**
+ * Request a path from a specific IP with SNI for the real hostname. TLS is
+ * validated against the hostname, so a parking server or a wrong certificate
+ * fails here rather than passing unseen.
+ */
+function get(ip, path) {
+  return new Promise((resolvePromise, reject) => {
+    const req = https.request(
+      {
+        host: ip,
+        servername: host,
+        path,
+        headers: { host, accept: "application/json" },
+        timeout: 15000,
+      },
+      (res) => {
+        let data = "";
+        res.on("data", (c) => (data += c));
+        res.on("end", () => resolvePromise({ status: res.statusCode, body: data, headers: res.headers }));
+      },
+    );
+    req.on("timeout", () => req.destroy(new Error("timed out")));
+    req.on("error", reject);
+    req.end();
+  });
+}
+
+async function check(name, fn) {
   try {
-    const res = await get(path);
-    await assertion(res);
+    await fn();
     console.log(`  ok    ${name}`);
   } catch (err) {
     failures++;
@@ -39,51 +80,74 @@ async function check(name, path, assertion) {
   }
 }
 
-const expect = (cond, message) => {
-  if (!cond) throw new Error(message);
-};
+console.log(`Smoke test against https://${host}`);
 
-console.log(`Smoke test against ${base}`);
-
-await check("app serves", "/", async (res) => {
-  expect(res.status === 200, `status ${res.status}`);
-  const html = await res.text();
-  expect(html.includes("Unified ZIP Code"), "page body missing the title");
+let ips = [];
+await check("public DNS resolves the domain", async () => {
+  ips = await resolveHost(host);
+  console.log(`        -> ${ips.join(", ")}`);
 });
 
-await check("lookup by code", "/api/lookup?code=BC23023", async (res) => {
+if (ips.length === 0) {
+  console.error(`\nCannot continue without DNS. ${failures} check(s) failed.`);
+  process.exit(1);
+}
+const ip = ips[0];
+
+await check("TLS certificate is valid for the domain", async () => {
+  // https.request validates the chain and the name against servername; a
+  // successful response IS the assertion. A parking server dies here.
+  const res = await get(ip, "/");
   expect(res.status === 200, `status ${res.status}`);
-  const body = await res.json();
+  expect(res.body.includes("Unified ZIP Code"), "page body missing the title");
+});
+
+const json = async (path) => {
+  const res = await get(ip, path);
+  let parsed;
+  try {
+    parsed = JSON.parse(res.body);
+  } catch {
+    throw new Error(`status ${res.status}, body is not JSON`);
+  }
+  return { res, body: parsed };
+};
+
+await check("lookup by code", async () => {
+  const { res, body } = await json("/api/lookup?code=BC23023");
+  expect(res.status === 200, `status ${res.status}`);
   expect(body.ok === true, "ok is not true");
   expect(body.data.barangay === "Poblacion", `wrong record: ${body.data?.barangay}`);
 });
 
-await check("lookup by psgc", "/api/lookup?psgc=031422023", async (res) => {
-  const body = await res.json();
+await check("lookup by psgc", async () => {
+  const { body } = await json("/api/lookup?psgc=031422023");
   expect(body.data?.code === "BC23023", "psgc did not resolve");
 });
 
-await check("malformed input is 400", "/api/lookup?code=NOPE", async (res) => {
+await check("malformed input is 400", async () => {
+  const { res } = await json("/api/lookup?code=NOPE");
   expect(res.status === 400, `status ${res.status}`);
 });
 
-await check("unknown code is 404", "/api/lookup?code=ZZ99999", async (res) => {
+await check("unknown code is 404", async () => {
+  const { res } = await json("/api/lookup?code=ZZ99999");
   expect(res.status === 404, `status ${res.status}`);
 });
 
-await check("search returns malabon", "/api/search?q=malabon&limit=100", async (res) => {
-  const body = await res.json();
+await check("search returns malabon", async () => {
+  const { body } = await json("/api/search?q=malabon&limit=100");
   expect(body.count === 24, `count ${body.count}, expected 24`);
 });
 
-await check("provinces list", "/api/provinces", async (res) => {
-  const body = await res.json();
+await check("provinces list with rate limit headers", async () => {
+  const { res, body } = await json("/api/provinces");
   expect(body.count === 82, `count ${body.count}`);
-  expect(res.headers.get("x-ratelimit-limit") === "60", "rate limit headers missing");
+  expect(res.headers["x-ratelimit-limit"] === "60", "rate limit headers missing");
 });
 
 if (failures) {
-  console.error(`\n${failures} check(s) failed against ${base}`);
+  console.error(`\n${failures} check(s) failed against https://${host}`);
   process.exit(1);
 }
 console.log("\nAll smoke checks passed.");
