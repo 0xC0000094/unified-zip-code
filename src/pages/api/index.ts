@@ -18,6 +18,7 @@ export const GET: APIRoute = limited(async (_request, url) => {
       endpoints: [
         { path: "/api/lookup?code=BC23023", returns: "one barangay" },
         { path: "/api/lookup?psgc=031422023", returns: "one barangay" },
+        { path: "/api/lookup?postal=3006", returns: "every barangay under a zip code" },
         { path: "/api/search?q=malabon&limit=25", returns: "matching barangays" },
         { path: "/api/provinces", returns: "all 82 provinces" },
         { path: "/api/municipalities?province=Bulacan", returns: "municipalities" },

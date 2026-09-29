@@ -101,6 +101,7 @@ uzc.get("BC23023");
 //   province: 'Bulacan', psgc: '031422023', postal: '3008' }
 
 uzc.fromPsgc("031422023");         // the same record
+uzc.fromPostal("3006");             // every barangay under the old zip code
 uzc.search("Poblacion San Rafael"); // [ ...records ]
 
 uzc.provinces();                    // 82
@@ -132,6 +133,7 @@ CORS is open, so it works from a browser.
 |---|---|
 | `/api/lookup?code=BC23023` | one barangay |
 | `/api/lookup?psgc=031422023` | one barangay, by geographic code |
+| `/api/lookup?postal=3006` | every barangay under an old zip code |
 | `/api/search?q=malabon&limit=25` | matching barangays, limit 1 to 100 |
 | `/api/provinces` | all 82 provinces |
 | `/api/municipalities?province=Bulacan` | municipalities, with their prefixes |

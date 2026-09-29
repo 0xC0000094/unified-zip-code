@@ -67,9 +67,9 @@ test("listings return the full sets", async () => {
   assert.ok(b.body.data.every((r: any) => r.code.startsWith("BC23")));
 });
 
-test("the index names all six endpoints", async () => {
+test("the index names all seven endpoints", async () => {
   const { body } = await json(index, "/api");
-  assert.equal(body.data.endpoints.length, 6);
+  assert.equal(body.data.endpoints.length, 7);
   assert.equal(body.data.barangays, 42047);
 });
 
@@ -80,4 +80,13 @@ test("the 61st request inside a minute is refused with retry-after", async () =>
   assert.ok(Number(res.headers.get("retry-after")) >= 1);
   const body = await res.json();
   assert.equal(body.ok, false);
+});
+
+test("lookup by postal returns every barangay under the zip code", async () => {
+  const { res, body } = await json(lookup, "/api/lookup?postal=1470");
+  assert.equal(res.status, 200);
+  assert.equal(body.data.length, 12);
+  assert.ok(body.data.every((r: any) => r.municipality === "Malabon City"));
+  assert.equal((await call(lookup, "/api/lookup?postal=147")).status, 400);
+  assert.equal((await call(lookup, "/api/lookup?postal=9999")).status, 404);
 });

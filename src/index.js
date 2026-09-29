@@ -47,6 +47,7 @@ export class UnifiedZipCode {
     this.count = data.count;
     this._byCode = new Map();
     this._byPsgc = new Map();
+    this._byPostal = new Map();
     this._records = [];
     this._provinces = [];
 
@@ -69,6 +70,11 @@ export class UnifiedZipCode {
           this._records.push(record);
           this._byCode.set(record.code, record);
           if (psgc) this._byPsgc.set(psgc, record);
+          // Some barangays carry two zip codes, written "1400/1410".
+          for (const zip of new Set(record.postal?.match(/\d{4}/g) ?? [])) {
+            if (!this._byPostal.has(zip)) this._byPostal.set(zip, []);
+            this._byPostal.get(zip).push(record);
+          }
         }
       }
     }
@@ -104,10 +110,22 @@ export class UnifiedZipCode {
   }
 
   /**
+   * Every barangay that carries a four digit zip code. The old code stops at
+   * the city, so this is usually many records.
+   */
+  fromPostal(postal) {
+    return this._byPostal.get(String(postal || "").trim()) || [];
+  }
+
+  /**
    * Free text search across barangay, municipality and province.
-   * Exact code and PSGC matches are returned first.
+   * Exact code and PSGC matches are returned first, and a four digit query
+   * returns the barangays under that zip code.
    */
   search(query, limit = 25) {
+    if (/^\d{4}$/.test(String(query || "").trim())) {
+      return this.fromPostal(query).slice(0, limit);
+    }
     const direct = this.get(query) || this.fromPsgc(query);
     if (direct) return [direct];
     const q = norm(query);

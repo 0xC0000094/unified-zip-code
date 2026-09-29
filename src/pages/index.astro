@@ -68,14 +68,15 @@ const provinces = db().provinces().length;
           type="search"
           autocomplete="off"
           spellcheck="false"
-          placeholder="A barangay, a municipality, a code, or a PSGC"
+          placeholder="A barangay, a municipality, a code, a PSGC, or an old zip code"
         />
         <p class="hint">
           Try
           <button type="button" data-example="Malabon">Malabon</button>,
           <button type="button" data-example="Poblacion San Rafael">Poblacion San Rafael</button>,
-          <button type="button" data-example="BC23023">BC23023</button>, or
-          <button type="button" data-example="031422023">031422023</button>.
+          <button type="button" data-example="BC23023">BC23023</button>,
+          <button type="button" data-example="031422023">031422023</button>, or
+          <button type="button" data-example="3006">3006</button>.
         </p>
 
         <p class="req" id="req" hidden>
@@ -98,6 +99,7 @@ const provinces = db().provinces().length;
           <tbody>
             <tr><td><a href="/api/lookup?code=BC23023"><code>/api/lookup?code=BC23023</code></a></td><td>one barangay</td></tr>
             <tr><td><a href="/api/lookup?psgc=031422023"><code>/api/lookup?psgc=031422023</code></a></td><td>one barangay, by geographic code</td></tr>
+            <tr><td><a href="/api/lookup?postal=3006"><code>/api/lookup?postal=3006</code></a></td><td>every barangay under an old zip code</td></tr>
             <tr><td><a href="/api/search?q=malabon"><code>/api/search?q=malabon&amp;limit=25</code></a></td><td>matching barangays</td></tr>
             <tr><td><a href="/api/provinces"><code>/api/provinces</code></a></td><td>all {provinces} provinces</td></tr>
             <tr><td><a href="/api/municipalities?province=Bulacan"><code>/api/municipalities?province=Bulacan</code></a></td><td>municipalities, with prefixes</td></tr>
@@ -314,6 +316,7 @@ const provinces = db().provinces().length;
       function endpointFor(q: string): string {
         const raw = q.trim().toUpperCase();
         if (CODE.test(raw)) return `/api/lookup?code=${encodeURIComponent(raw)}`;
+        if (/^\d{4}$/.test(raw)) return `/api/lookup?postal=${raw}`;
         const digits = q.replace(/\D/g, "");
         if (digits.length >= 8 && digits.length <= 9 && /^[\d\s-]+$/.test(q.trim())) {
           return `/api/lookup?psgc=${encodeURIComponent(digits.padStart(9, "0"))}`;

@@ -86,3 +86,12 @@ test("rejects a payload that is not the published shape", () => {
   assert.throws(() => new UnifiedZipCode({}), TypeError);
   assert.throws(() => new UnifiedZipCode(null), TypeError);
 });
+
+test("an old zip code returns every barangay under it", () => {
+  const hits = uzc.fromPostal("3006");
+  assert.equal(hits.length, 27);
+  assert.ok(hits.every((r) => r.postal.includes("3006")));
+  assert.deepEqual(uzc.search("3006", 5), hits.slice(0, 5));
+  assert.ok(uzc.fromPostal("1410").some((r) => r.postal === "1400/1410"));
+  assert.deepEqual(uzc.fromPostal("9999"), []);
+});
