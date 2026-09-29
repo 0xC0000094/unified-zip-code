@@ -95,3 +95,11 @@ test("an old zip code returns every barangay under it", () => {
   assert.ok(uzc.fromPostal("1410").some((r) => r.postal === "1400/1410"));
   assert.deepEqual(uzc.fromPostal("9999"), []);
 });
+
+test("a partial code returns the barangays under it", () => {
+  const hits = uzc.search("bc23", 100);
+  assert.equal(hits.length, 34);
+  assert.ok(hits.every((r) => r.code.startsWith("BC23")));
+  assert.equal(uzc.search("BC23", 5).length, 5);
+  assert.ok(uzc.search("BC230", 100).every((r) => r.code.startsWith("BC230")));
+});

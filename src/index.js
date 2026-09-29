@@ -119,8 +119,9 @@ export class UnifiedZipCode {
 
   /**
    * Free text search across barangay, municipality and province.
-   * Exact code and PSGC matches are returned first, and a four digit query
-   * returns the barangays under that zip code.
+   * Exact code and PSGC matches are returned first, a partial code such as
+   * BC23 returns the barangays under it, and a four digit query returns the
+   * barangays under that zip code.
    */
   search(query, limit = 25) {
     if (/^\d{4}$/.test(String(query || "").trim())) {
@@ -128,6 +129,17 @@ export class UnifiedZipCode {
     }
     const direct = this.get(query) || this.fromPsgc(query);
     if (direct) return [direct];
+    // A partial code, BC23 or BC230, is a prefix: the barangays under it.
+    const prefix = String(query || "").trim().toUpperCase();
+    if (/^[A-Z]{2}\d{2,4}$/.test(prefix)) {
+      const hits = [];
+      for (const r of this._records) {
+        if (!r.code.startsWith(prefix)) continue;
+        hits.push(r);
+        if (hits.length >= limit) break;
+      }
+      return hits;
+    }
     const q = norm(query);
     if (!q) return [];
     const terms = q.split(" ");

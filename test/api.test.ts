@@ -90,3 +90,9 @@ test("lookup by postal returns every barangay under the zip code", async () => {
   assert.equal((await call(lookup, "/api/lookup?postal=147")).status, 400);
   assert.equal((await call(lookup, "/api/lookup?postal=9999")).status, 404);
 });
+
+test("search takes a municipality code", async () => {
+  const { body } = await json(search, "/api/search?q=BC23&limit=100");
+  assert.equal(body.count, 34);
+  assert.ok(body.data.every((r: any) => r.municipality === "San Rafael"));
+});
