@@ -1,13 +1,4 @@
-/**
- * A sliding window rate limiter held in memory.
- *
- * What this is honest about: on Vercel each serverless container keeps its own
- * counter, so a client spread across several containers gets a higher effective
- * limit than the number below, and a cold start resets the window. That is
- * fine for a public demonstration API and it is not fine for anything that has
- * to be enforced. Enforcing it properly means a shared store, which is the
- * trade this project has not paid for.
- */
+/** A sliding window rate limiter: 60 requests a minute per address. */
 
 const WINDOW_MS = 60_000;
 const LIMIT = 60;

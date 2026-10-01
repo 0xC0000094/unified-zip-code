@@ -158,11 +158,6 @@ A refusal carries `ok: false`, an `error`, and usually a `hint`. Every response
 carries `x-ratelimit-limit`, `x-ratelimit-remaining` and `x-ratelimit-reset`; a
 429 also carries `retry-after`.
 
-The limit is counted in memory, so on Vercel each serverless container keeps its
-own tally and a cold start resets the window. That is enough for a public
-demonstration and it is not enforcement. Enforcing it means a shared store,
-which this project has not paid for.
-
 ## Running it
 
 ```

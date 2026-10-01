@@ -106,13 +106,6 @@ const provinces = db().provinces().length;
             <tr><td><a href="/api/barangays?municipality=BC23"><code>/api/barangays?municipality=BC23</code></a></td><td>barangays in a municipality</td></tr>
           </tbody>
         </table>
-
-        <p class="note">
-          The limit is counted in memory, so each serverless container keeps its
-          own tally and a cold start resets it. That is enough for a public
-          demonstration and it is not enforcement. Enforcing it means a shared
-          store, which this project has not paid for.
-        </p>
       </section>
 
       <section id="data">
