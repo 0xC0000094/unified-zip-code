@@ -161,7 +161,7 @@ carries `x-ratelimit-limit`, `x-ratelimit-remaining` and `x-ratelimit-reset`; a
 ## Running it
 
 ```
-npm test        # 17 tests
+npm test        # 28 tests
 npm run dev     # the app and the API, locally
 npm run build   # a Vercel build
 npm run extract # regenerate the data from the source workbook
